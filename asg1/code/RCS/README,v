@@ -1,0 +1,44 @@
+head	1.2;
+access;
+symbols;
+locks;
+comment	@# @;
+
+
+1.2
+date	2014.04.12.20.57.19;	author -;	state -;
+branches;
+next	1.1;
+
+1.1
+date	2014.04.08.00.23.20;	author -;	state -;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.2
+log
+@-
+@
+text
+@# $Id: README,v 1.1 2014-04-07 17:23:20-07 - - $
+
+Brad Cardello
+bcardell
+unix2.lt.ucsc.edu
+@
+
+
+1.1
+log
+@-
+@
+text
+@d1 5
+a5 1
+# $Id: README,v 1.1 2014-03-24 18:45:16-07 - - $
+@

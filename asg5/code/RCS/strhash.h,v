@@ -1,0 +1,60 @@
+head	1.2;
+access;
+symbols;
+locks;
+comment	@ * @;
+
+
+1.2
+date	2014.06.07.11.18.23;	author -;	state -;
+branches;
+next	1.1;
+
+1.1
+date	2014.06.06.08.32.45;	author -;	state -;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.2
+log
+@-
+@
+text
+@// Brad Cardello (bcardell)
+// Kara Ekiss (kekiss)
+// $Id: strhash.h,v 1.1 2014-06-06 01:32:45-07 - - $
+
+//
+// NAME
+//    strhash - return an unsigned 32-bit hash code for a string
+//
+// SYNOPSIS
+//    size_t strhash (const char *string);
+//
+
+#ifndef __STRHASH_H__
+#define __STRHASH_H__
+
+#include <inttypes.h>
+
+size_t strhash (const char *string);
+
+#endif
+
+@
+
+
+1.1
+log
+@-
+@
+text
+@d1 3
+a3 1
+// $Id: strhash.h,v 1.3 2014-03-05 19:24:07-08 - - $
+@

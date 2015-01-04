@@ -1,0 +1,2271 @@
+head	1.96;
+access;
+symbols;
+locks;
+comment	@# @;
+
+
+1.96
+date	2014.04.15.08.07.36;	author -;	state -;
+branches;
+next	1.95;
+
+1.95
+date	2014.04.15.06.53.05;	author -;	state -;
+branches;
+next	1.94;
+
+1.94
+date	2014.04.15.06.49.29;	author -;	state -;
+branches;
+next	1.93;
+
+1.93
+date	2014.04.15.06.04.35;	author -;	state -;
+branches;
+next	1.92;
+
+1.92
+date	2014.04.15.06.04.02;	author -;	state -;
+branches;
+next	1.91;
+
+1.91
+date	2014.04.15.05.51.19;	author -;	state -;
+branches;
+next	1.90;
+
+1.90
+date	2014.04.15.05.48.05;	author -;	state -;
+branches;
+next	1.89;
+
+1.89
+date	2014.04.15.05.43.50;	author -;	state -;
+branches;
+next	1.88;
+
+1.88
+date	2014.04.15.01.56.41;	author -;	state -;
+branches;
+next	1.87;
+
+1.87
+date	2014.04.15.01.56.19;	author -;	state -;
+branches;
+next	1.86;
+
+1.86
+date	2014.04.15.01.43.03;	author -;	state -;
+branches;
+next	1.85;
+
+1.85
+date	2014.04.15.01.38.01;	author -;	state -;
+branches;
+next	1.84;
+
+1.84
+date	2014.04.15.01.28.58;	author -;	state -;
+branches;
+next	1.83;
+
+1.83
+date	2014.04.15.01.18.46;	author -;	state -;
+branches;
+next	1.82;
+
+1.82
+date	2014.04.15.00.22.39;	author -;	state -;
+branches;
+next	1.81;
+
+1.81
+date	2014.04.15.00.06.35;	author -;	state -;
+branches;
+next	1.80;
+
+1.80
+date	2014.04.15.00.02.25;	author -;	state -;
+branches;
+next	1.79;
+
+1.79
+date	2014.04.15.00.00.32;	author -;	state -;
+branches;
+next	1.78;
+
+1.78
+date	2014.04.14.23.59.34;	author -;	state -;
+branches;
+next	1.77;
+
+1.77
+date	2014.04.14.23.59.17;	author -;	state -;
+branches;
+next	1.76;
+
+1.76
+date	2014.04.14.23.49.04;	author -;	state -;
+branches;
+next	1.75;
+
+1.75
+date	2014.04.14.23.45.20;	author -;	state -;
+branches;
+next	1.74;
+
+1.74
+date	2014.04.14.23.43.52;	author -;	state -;
+branches;
+next	1.73;
+
+1.73
+date	2014.04.14.23.40.32;	author -;	state -;
+branches;
+next	1.72;
+
+1.72
+date	2014.04.14.23.39.04;	author -;	state -;
+branches;
+next	1.71;
+
+1.71
+date	2014.04.14.23.36.50;	author -;	state -;
+branches;
+next	1.70;
+
+1.70
+date	2014.04.14.23.34.31;	author -;	state -;
+branches;
+next	1.69;
+
+1.69
+date	2014.04.14.23.32.42;	author -;	state -;
+branches;
+next	1.68;
+
+1.68
+date	2014.04.14.23.32.07;	author -;	state -;
+branches;
+next	1.67;
+
+1.67
+date	2014.04.14.23.31.38;	author -;	state -;
+branches;
+next	1.66;
+
+1.66
+date	2014.04.14.22.59.40;	author -;	state -;
+branches;
+next	1.65;
+
+1.65
+date	2014.04.14.22.57.18;	author -;	state -;
+branches;
+next	1.64;
+
+1.64
+date	2014.04.14.19.25.24;	author -;	state -;
+branches;
+next	1.63;
+
+1.63
+date	2014.04.14.19.24.46;	author -;	state -;
+branches;
+next	1.62;
+
+1.62
+date	2014.04.14.19.21.05;	author -;	state -;
+branches;
+next	1.61;
+
+1.61
+date	2014.04.14.07.56.38;	author -;	state -;
+branches;
+next	1.60;
+
+1.60
+date	2014.04.14.07.55.33;	author -;	state -;
+branches;
+next	1.59;
+
+1.59
+date	2014.04.14.07.54.55;	author -;	state -;
+branches;
+next	1.58;
+
+1.58
+date	2014.04.14.07.50.17;	author -;	state -;
+branches;
+next	1.57;
+
+1.57
+date	2014.04.14.07.46.21;	author -;	state -;
+branches;
+next	1.56;
+
+1.56
+date	2014.04.14.07.45.31;	author -;	state -;
+branches;
+next	1.55;
+
+1.55
+date	2014.04.14.07.32.56;	author -;	state -;
+branches;
+next	1.54;
+
+1.54
+date	2014.04.14.07.31.22;	author -;	state -;
+branches;
+next	1.53;
+
+1.53
+date	2014.04.14.07.05.36;	author -;	state -;
+branches;
+next	1.52;
+
+1.52
+date	2014.04.14.07.02.45;	author -;	state -;
+branches;
+next	1.51;
+
+1.51
+date	2014.04.14.06.47.39;	author -;	state -;
+branches;
+next	1.50;
+
+1.50
+date	2014.04.14.06.45.36;	author -;	state -;
+branches;
+next	1.49;
+
+1.49
+date	2014.04.13.08.32.21;	author -;	state -;
+branches;
+next	1.48;
+
+1.48
+date	2014.04.13.08.21.27;	author -;	state -;
+branches;
+next	1.47;
+
+1.47
+date	2014.04.13.08.20.54;	author -;	state -;
+branches;
+next	1.46;
+
+1.46
+date	2014.04.13.07.33.58;	author -;	state -;
+branches;
+next	1.45;
+
+1.45
+date	2014.04.13.07.32.55;	author -;	state -;
+branches;
+next	1.44;
+
+1.44
+date	2014.04.12.20.44.32;	author -;	state -;
+branches;
+next	1.43;
+
+1.43
+date	2014.04.12.20.36.33;	author -;	state -;
+branches;
+next	1.42;
+
+1.42
+date	2014.04.12.20.35.13;	author -;	state -;
+branches;
+next	1.41;
+
+1.41
+date	2014.04.12.20.34.07;	author -;	state -;
+branches;
+next	1.40;
+
+1.40
+date	2014.04.12.20.32.05;	author -;	state -;
+branches;
+next	1.39;
+
+1.39
+date	2014.04.12.20.30.28;	author -;	state -;
+branches;
+next	1.38;
+
+1.38
+date	2014.04.12.20.29.29;	author -;	state -;
+branches;
+next	1.37;
+
+1.37
+date	2014.04.11.21.59.10;	author -;	state -;
+branches;
+next	1.36;
+
+1.36
+date	2014.04.11.21.48.56;	author -;	state -;
+branches;
+next	1.35;
+
+1.35
+date	2014.04.11.21.47.55;	author -;	state -;
+branches;
+next	1.34;
+
+1.34
+date	2014.04.11.21.46.07;	author -;	state -;
+branches;
+next	1.33;
+
+1.33
+date	2014.04.11.21.44.49;	author -;	state -;
+branches;
+next	1.32;
+
+1.32
+date	2014.04.11.21.41.00;	author -;	state -;
+branches;
+next	1.31;
+
+1.31
+date	2014.04.11.21.37.32;	author -;	state -;
+branches;
+next	1.30;
+
+1.30
+date	2014.04.11.21.34.06;	author -;	state -;
+branches;
+next	1.29;
+
+1.29
+date	2014.04.11.21.32.54;	author -;	state -;
+branches;
+next	1.28;
+
+1.28
+date	2014.04.11.21.28.17;	author -;	state -;
+branches;
+next	1.27;
+
+1.27
+date	2014.04.11.21.27.49;	author -;	state -;
+branches;
+next	1.26;
+
+1.26
+date	2014.04.11.21.20.05;	author -;	state -;
+branches;
+next	1.25;
+
+1.25
+date	2014.04.11.21.17.03;	author -;	state -;
+branches;
+next	1.24;
+
+1.24
+date	2014.04.11.04.46.55;	author -;	state -;
+branches;
+next	1.23;
+
+1.23
+date	2014.04.11.04.42.31;	author -;	state -;
+branches;
+next	1.22;
+
+1.22
+date	2014.04.11.04.37.43;	author -;	state -;
+branches;
+next	1.21;
+
+1.21
+date	2014.04.11.04.36.29;	author -;	state -;
+branches;
+next	1.20;
+
+1.20
+date	2014.04.11.04.33.41;	author -;	state -;
+branches;
+next	1.19;
+
+1.19
+date	2014.04.11.04.28.19;	author -;	state -;
+branches;
+next	1.18;
+
+1.18
+date	2014.04.11.04.26.34;	author -;	state -;
+branches;
+next	1.17;
+
+1.17
+date	2014.04.11.04.25.22;	author -;	state -;
+branches;
+next	1.16;
+
+1.16
+date	2014.04.11.04.20.34;	author -;	state -;
+branches;
+next	1.15;
+
+1.15
+date	2014.04.11.04.14.09;	author -;	state -;
+branches;
+next	1.14;
+
+1.14
+date	2014.04.11.04.01.11;	author -;	state -;
+branches;
+next	1.13;
+
+1.13
+date	2014.04.11.03.44.00;	author -;	state -;
+branches;
+next	1.12;
+
+1.12
+date	2014.04.11.03.41.51;	author -;	state -;
+branches;
+next	1.11;
+
+1.11
+date	2014.04.11.02.55.14;	author -;	state -;
+branches;
+next	1.10;
+
+1.10
+date	2014.04.10.23.15.05;	author -;	state -;
+branches;
+next	1.9;
+
+1.9
+date	2014.04.10.22.46.06;	author -;	state -;
+branches;
+next	1.8;
+
+1.8
+date	2014.04.10.22.22.24;	author -;	state -;
+branches;
+next	1.7;
+
+1.7
+date	2014.04.10.22.05.13;	author -;	state -;
+branches;
+next	1.6;
+
+1.6
+date	2014.04.10.21.56.29;	author -;	state -;
+branches;
+next	1.5;
+
+1.5
+date	2014.04.10.21.47.02;	author -;	state -;
+branches;
+next	1.4;
+
+1.4
+date	2014.04.10.21.21.44;	author -;	state -;
+branches;
+next	1.3;
+
+1.3
+date	2014.04.09.23.40.32;	author -;	state -;
+branches;
+next	1.2;
+
+1.2
+date	2014.04.09.22.43.46;	author -;	state -;
+branches;
+next	1.1;
+
+1.1
+date	2014.04.08.00.23.20;	author -;	state -;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.96
+log
+@-
+@
+text
+@// $Id: jgrep.java,v 1.91 2014/04/15 05:51:19 - - $
+
+//
+// This program is a stub showing how to create a pattern from a
+// regular expression.  It does not handle options or files, and
+// has some other bugs which you must discover and fix.
+//
+
+import java.io.*;
+import java.util.Scanner;
+import java.util.regex.*;
+import static java.lang.System.*;
+
+class jgrep {
+
+   static void scanfile (Scanner input, String filename,
+                         Pattern pattern, options opts) {
+      int line_number = 0;
+      while (input.hasNextLine()) {
+         String line = input.nextLine();
+         line_number++;
+         boolean matches = pattern.matcher (line).find();
+         if (opts.reverse_match == true){
+            if (!matches) {
+               messages.exit_status = messages.EXIT_SUCCESS;
+               if (opts.filename_only && !opts.number_lines) {
+                  out.printf ("%s%n", filename);
+                  break;
+               }
+               else if (!opts.filename_only && opts.number_lines) {
+                  out.printf ("%s:%d:%s%n", filename, line_number,
+                              line);
+               }
+               else if (!opts.filename_only && !opts.number_lines) {
+                  out.printf ("%s:%s%n", filename, line);
+               }
+            }
+         }
+         else if (opts.reverse_match == false) {
+            if (matches) {
+               messages.exit_status = messages.EXIT_SUCCESS;
+               if (opts.filename_only && !opts.number_lines) {
+                  out.printf ("%s%n", filename);
+               }
+               else if (!opts.filename_only && opts.number_lines) {
+                  out.printf ("%s:%d:%s%n", filename, line_number,
+                  line);
+               }
+               else if (!opts.filename_only && !opts.number_lines) {
+                  out.printf ("%s:%s%n", filename, line);
+               }
+            }
+         }
+      }
+   }
+
+   public static void main (String[] args) {
+      options opts = new options (args);
+      Pattern pattern;
+      try {
+         if (opts.insensitive){
+            pattern = Pattern.compile (opts.regex,
+                                       Pattern.CASE_INSENSITIVE);
+         }
+         else{
+            pattern = Pattern.compile (opts.regex);
+         }
+         if (opts.filenames.length == 0) {
+            scanfile (new Scanner (in), "<stdin>", pattern, opts);
+         }else {
+            for (int argi = opts.hasOption;
+                 argi < opts.filenames.length;
+                 ++argi) {
+               try {
+                  String filename = opts.filenames[argi];
+                  Scanner input = new Scanner (new File (filename));
+                  scanfile (input, filename, pattern, opts);
+                  input.close();
+               }catch (IOException error) {
+                  messages.warn (error.getMessage());
+               }
+            }
+         }
+      }catch (PatternSyntaxException error) {
+         messages.die (error.getMessage());
+      }
+      exit (messages.exit_status);
+   }
+}
+@
+
+
+1.95
+log
+@-
+@
+text
+@d31 2
+a32 1
+                  out.printf ("%s:%d:%s%n", filename, line_number, line);
+d46 2
+a47 1
+                  out.printf ("%s:%d:%s%n", filename, line_number, line);
+d62 2
+a63 1
+            pattern = Pattern.compile (opts.regex, Pattern.CASE_INSENSITIVE);
+d71 3
+a73 1
+            for (int argi = opts.hasOption; argi < opts.filenames.length; ++argi) {
+@
+
+
+1.94
+log
+@-
+@
+text
+@a35 3
+               else {
+                  messages.warn2 (error.getMessage());
+               }
+a49 3
+               else {
+                  messages.warn2 (error.getMessage());
+               }
+@
+
+
+1.93
+log
+@-
+@
+text
+@d1 1
+a1 1
+// $Id: jgrep.java,v 1.64 2014-04-14 12:25:24-07 - - $
+d21 1
+a21 1
+         line_number += 1;
+d24 14
+a37 12
+            try {   
+               if (!matches) {
+                  if (opts.filename_only && !opts.number_lines) {
+                     out.printf ("%s%n", filename);
+                     break;
+                  }
+                  else if (!opts.filename_only && opts.number_lines) {
+                     out.printf ("%s:%d:%s%n", filename, line_number, line);
+                  }
+                  else if (!opts.filename_only && !opts.number_lines) {
+                     out.printf ("%s:%s%n", filename, line);
+                  }
+a38 2
+            }catch (SyntaxException err) {
+               messages.warn2 (err.getMessage());
+d42 13
+a54 11
+            try {
+               if (matches) {
+                  if (opts.filename_only && !opts.number_lines) {
+                     out.printf ("%s%n", filename);
+                  }
+                  else if (!opts.filename_only && opts.number_lines) {
+                     out.printf ("%s:%d:%s%n", filename, line_number, line);
+                  }
+                  else if (!opts.filename_only && !opts.number_lines) {
+                     out.printf ("%s:%s%n", filename, line);
+                  }
+a55 2
+            }catch (SyntaxException err) {
+               messages.warn2 (err.getMessage());
+@
+
+
+1.92
+log
+@-
+@
+text
+@d37 1
+a37 1
+            }catch (SyntaxError err) {
+d54 1
+a54 1
+            }catch (SyntaxError err) {
+@
+
+
+1.91
+log
+@-
+@
+text
+@d24 12
+a35 13
+            if (!matches) {
+               if (opts.filename_only && !opts.number_lines) {
+                  out.printf ("%s%n", filename);
+                  break;
+               }
+               else if (!opts.filename_only && opts.number_lines) {
+                  out.printf ("%s:%d:%s%n", filename, line_number, line);
+               }
+               else if (!opts.filename_only && !opts.number_lines) {
+                  out.printf ("%s:%s%n", filename, line);
+               }
+               else {
+                  messages.warn2 (error.getMessage());
+d37 2
+d42 11
+a52 12
+            if (matches) {
+               if (opts.filename_only && !opts.number_lines) {
+                  out.printf ("%s%n", filename);
+               }
+               else if (!opts.filename_only && opts.number_lines) {
+                  out.printf ("%s:%d:%s%n", filename, line_number, line);
+               }
+               else if (!opts.filename_only && !opts.number_lines) {
+                  out.printf ("%s:%s%n", filename, line);
+               }
+               else {
+                  messages.warn2 (error.getMessage());
+d54 2
+@
+
+
+1.90
+log
+@-
+@
+text
+@d32 3
+d36 1
+a36 1
+                  out.printf ("%s:%s%n", filename, line);
+a37 1
+
+d48 3
+d52 1
+a52 1
+                  out.printf ("%s:%s%n", filename, line);
+a79 3
+                  if (opts.correctSyntax == false){                             // might need this or something similar somewhere else
+                     messages.warn2 (error.getMessage());
+                  }
+@
+
+
+1.89
+log
+@-
+@
+text
+@a31 3
+               /*else if (opts.filename_only && opts.number_lines) {
+                  out.printf ("%s:%d%n", filename, line_number);
+               }*/
+a45 3
+               /*else if (opts.filename_only && opts.number_lines) {
+                  out.printf ("%s:%d%n", filename, line_number);
+               }*/
+@
+
+
+1.88
+log
+@-
+@
+text
+@d27 1
+d32 1
+a32 1
+               else if (opts.filename_only && opts.number_lines) {
+d34 1
+a34 1
+               }
+d49 1
+a49 1
+               else if (opts.filename_only && opts.number_lines) {
+d51 1
+a51 1
+               }
+@
+
+
+1.87
+log
+@-
+@
+text
+@d80 1
+a80 1
+                  if (correctSyntax == false){                             // might need this or something similar somewhere else
+@
+
+
+1.86
+log
+@-
+@
+text
+@d80 3
+@
+
+
+1.85
+log
+@-
+@
+text
+@a55 25
+            
+         /* if (matches == false  && opts.filename_only == false && opts.number_lines == false && opts.reverse_match == false) {
+            out.printf ("%s:%s%n", filename, line);
+         }
+         else if (matches == false && opts.filename_only == true && opts.number_lines == false && opts.reverse_match == false){
+            out.printf ("%s%n", filename);
+         }
+         else if (matches == false && opts.filename_only == true && opts.number_lines == true && opts.reverse_match == false){
+            out.printf ("%s:%d%n", filename, line_number);
+         }
+         else if (matches == false && opts.number_lines == true && opts.filename_only == false && opts.reverse_match == false){
+            out.printf ("%s:%d:%s%n", filename, line_number, line);
+         }
+         if (matches == true && opts.filename_only == false && opts.number_lines == false && opts.reverse_match == true) {
+            out.printf ("%s:%s%n", filename, line);
+         }
+         else if (matches == true && opts.filename_only == true && opts.number_lines == false && opts.reverse_match == true){
+            out.printf ("%s%n", filename);
+         }
+         else if (matches == true && opts.filename_only == true && opts.number_lines == true && opts.reverse_match == true){
+            out.printf ("%s:%d%n", filename, line_number);
+         }
+         else if (matches == true && opts.number_lines == true && opts.filename_only == false && opts.reverse_match == true){
+            out.printf ("%s:%d:%s%n", filename, line_number, line);
+         } */
+@
+
+
+1.84
+log
+@-
+@
+text
+@d25 1
+a25 1
+               if (opts.filename_only) {
+d28 1
+a28 1
+               else if (opts.number_lines) {
+d37 1
+d42 1
+a42 1
+               if (opts.filename_only) {
+d45 1
+a45 1
+               else if (opts.number_lines) {
+@
+
+
+1.83
+log
+@-
+@
+text
+@d96 1
+a96 1
+            for (int argi = 1; argi < opts.filenames.length - 1; ++argi) {
+@
+
+
+1.82
+log
+@-
+@
+text
+@d96 1
+a96 1
+            for (int argi = 1; argi < opts.filenames.length; ++argi) {
+a112 1
+
+@
+
+
+1.81
+log
+@-
+@
+text
+@d24 1
+a24 2
+            matches = !matches;
+            if (matches) {
+d29 1
+a29 1
+                  out.printf ("%s:%d%n", filename, line_number);
+a37 3
+            else{
+               continue;
+            }
+a40 3
+               continue;
+            }
+            else{
+@
+
+
+1.80
+log
+@-
+@
+text
+@d23 1
+a23 1
+         if (v == true){
+d26 1
+a26 1
+               if (l) {
+d29 1
+a29 1
+               else if (n) {
+d32 1
+a32 1
+               else if (l && n) {
+d43 1
+a43 1
+         else if (v == false) {
+d48 1
+a48 1
+               if (l) {
+d51 1
+a51 1
+               else if (n) {
+d54 1
+a54 1
+               else if (l && n) {
+a91 4
+      boolean i = opts.insensitive;
+      boolean l = opts.filename_only;
+      boolean n = opts.number_lines;
+      boolean v = opts.reverse_match;
+d94 1
+a94 1
+         if (i){
+@
+
+
+1.79
+log
+@-
+@
+text
+@d23 1
+a23 1
+         if (opts.reverse_match == true){
+d26 1
+a26 1
+               if (opts.filename_only) {
+d29 1
+a29 1
+               else if (opts.number_lines) {
+d32 1
+a32 1
+               else if (opts.filename_only && opts.number_lines) {
+d43 1
+a43 1
+         else if (opts.reverse_match == false) {
+d48 1
+a48 1
+               if (opts.filename_only) {
+d51 1
+a51 1
+               else if (opts.number_lines) {
+d54 1
+a54 1
+               else if (opts.filename_only && opts.number_lines) {
+@
+
+
+1.78
+log
+@-
+@
+text
+@d92 1
+a92 1
+      boolean i = opts.insensivive;
+d94 1
+a94 1
+      boolean n = opts.number_line;
+@
+
+
+1.77
+log
+@-
+@
+text
+@d95 1
+a95 1
+      boolean v = opts.reverse_match
+@
+
+
+1.76
+log
+@-
+@
+text
+@d92 4
+d98 1
+a98 1
+         if (opts.insensitive){
+@
+
+
+1.75
+log
+@-
+@
+text
+@d52 1
+a52 1
+                  out.printf ("%s:%d%n", filename, line_number);
+@
+
+
+1.74
+log
+@-
+@
+text
+@d57 1
+a57 1
+               else if (!opts.filename_only && !opts.number_lines) {
+@
+
+
+1.73
+log
+@-
+@
+text
+@d57 1
+a57 1
+               else {
+@
+
+
+1.72
+log
+@-
+@
+text
+@d45 3
+a60 3
+            else{
+               continue;
+            }
+@
+
+
+1.71
+log
+@-
+@
+text
+@a25 3
+               continue;
+            }
+            else{
+d38 3
+a40 1
+
+@
+
+
+1.70
+log
+@-
+@
+text
+@d23 1
+a23 1
+         if (opts.reverse_match){
+@
+
+
+1.69
+log
+@-
+@
+text
+@d38 4
+d55 3
+a62 1
+         //else{
+@
+
+
+1.68
+log
+@-
+@
+text
+@d32 1
+a32 1
+               else if (opts.numberlines) {
+d35 1
+a35 1
+               else if (opts.filename_only && opts.numberlines) {
+d45 1
+a45 1
+               else if (opts.numberlines) {
+d48 1
+a48 1
+               else if (opts.filename_only && opts.numberlines) {
+@
+
+
+1.67
+log
+@-
+@
+text
+@d39 1
+@
+
+
+1.66
+log
+@-
+@
+text
+@d23 1
+a23 1
+         if (opts.reverse_match == true){
+d25 29
+d55 3
+a57 1
+         if (matches == true && opts.reverse_match == false) {
+d80 1
+a80 1
+         }
+@
+
+
+1.65
+log
+@-
+@
+text
+@d26 1
+a26 1
+         if (matches == true && opts.filename_only == false && opts.number_lines == false && opts.reverse_match == false) {
+@
+
+
+1.64
+log
+@-
+@
+text
+@d1 1
+a1 1
+// $Id: jgrep.java,v 1.48 2014/04/13 08:21:27 - - $
+d26 1
+a26 1
+         if (opts.filename_only == false && opts.number_lines == false && opts.reverse_match == false) {
+@
+
+
+1.63
+log
+@-
+@
+text
+@a25 3
+         if (matches){
+            out.printf ("%s:%s%n", filename, line);
+         }
+@
+
+
+1.62
+log
+@-
+@
+text
+@d19 2
+a20 2
+      while (input.hasNextLine()) {                         // edit this part for flags
+         String line = input.nextLine();                    // l and v
+d26 4
+a29 1
+         if (matches == false && opts.filename_only == false && opts.number_lines == false && opts.reverse_match == false) {           // should I re-add matches to part of the conditional?
+a30 1
+            break;
+d41 1
+a41 1
+         if (matches == true && opts.filename_only == false && opts.number_lines == false && opts.reverse_match == true) {    // this is where you just edited
+d61 1
+a61 1
+            pattern = Pattern.compile (opts.regex, Pattern.CASE_INSENSITIVE);      // should opts.regex just be regex? why?
+@
+
+
+1.61
+log
+@-
+@
+text
+@d1 1
+a1 1
+// $Id: jgrep.java,v 1.24 2014-04-10 21:46:55-07 - - $
+d19 2
+a20 2
+      while (input.hasNextLine()) {
+         String line = input.nextLine();
+d26 1
+a26 22
+         if (matches == false && opts.reverse_match == false){
+           continue;
+         }
+         if ((matches == true && opts.reverse_match == false) || (matches == false && opts.reverse_match == true)){
+            if (opts.filename_only == true && opts.number_lines == false){
+               out.printf ("%s%n", filename);
+               continue;
+            }
+            else if (opts.filename_only == true && opts.number_lines == true){
+               out.printf ("%s:%d%n", filename, line_number);
+               continue;
+            }
+            else if (opts.number_lines == true && opts.filename_only == false){
+               out.printf ("%s:%d:%s%n", filename, line_number, line);
+               continue;
+            }
+            else{
+               out.printf ("%s:%s%n", filename, line);
+               continue;
+            }
+         } //*********************************************************************
+         if (matches == true && opts.filename_only == false && opts.number_lines == false && opts.reverse_match == true) {
+d28 1
+d30 1
+a30 1
+         else if (matches == true && opts.filename_only == true && opts.number_lines == false && opts.reverse_match == true){
+d33 1
+a33 1
+         else if (matches == true && opts.filename_only == true && opts.number_lines == true && opts.reverse_match == true){
+d36 1
+a36 1
+         else if (matches == true && opts.number_lines == true && opts.filename_only == false && opts.reverse_match == true){
+d39 1
+a39 1
+         if (matches == true && opts.filename_only == false && opts.number_lines == false && opts.reverse_match == false){
+d42 2
+a43 2
+         else if (matches == true && opts.filename_only == true && opts.number_lines == false && opts.reverse_match == false){
+            continue;
+d45 2
+a46 2
+         else if (matches == true && opts.filename_only == true && opts.number_lines == true && opts.reverse_match == false){
+            continue;
+d48 2
+a49 2
+         else if (matches == true && opts.number_lines == true && opts.filename_only == false && opts.reverse_match == false){
+            continue;
+@
+
+
+1.60
+log
+@-
+@
+text
+@d36 1
+d40 1
+d44 1
+@
+
+
+1.59
+log
+@-
+@
+text
+@a42 2
+         }
+         
+@
+
+
+1.58
+log
+@-
+@
+text
+@d29 14
+a42 5
+         if (matches == true && opts.filename_only == false && opts.number_lines == false && opts.reverse_match == false){
+            out.printf ("%s:%s%n", filename, line);
+         }
+         else if (matches == true && opts.filename_only == true && opts.number_lines == false && opts.reverse_match == false){
+            out.printf ("%s%n", filename);
+d44 1
+a44 5
+         else if (matches == true && opts.filename_only == true && opts.number_lines == true && opts.reverse_match == false){
+            out.printf ("%s:%d%n", filename, line_number);
+         }
+         else if (matches == true && opts.number_lines == true && opts.filename_only == false && opts.reverse_match == false){
+            out.printf ("%s:%d:%s%n", filename, line_number, line);
+@
+
+
+1.57
+log
+@-
+@
+text
+@d26 1
+a26 1
+         if (matches == false && opts.filename_only == false && opts.number_lines == false && opts.reverse_match == false){
+a28 9
+         else if (matches == false && opts.filename_only == true && opts.number_lines == false && opts.reverse_match == false){
+            out.printf ("%s%n", filename);
+         }
+         else if (matches == false && opts.filename_only == true && opts.number_lines == true && opts.reverse_match == false){
+            out.printf ("%s:%d%n", filename, line_number);
+         }
+         else if (matches == false && opts.number_lines == true && opts.filename_only == false && opts.reverse_match == false){
+            out.printf ("%s:%d:%s%n", filename, line_number, line);
+         } //********************************************************************
+d54 1
+a54 1
+            continue;
+@
+
+
+1.56
+log
+@-
+@
+text
+@d27 1
+a27 1
+           out.printf ("%s:%s%n", filename, line);
+@
+
+
+1.55
+log
+@-
+@
+text
+@d19 2
+a20 2
+      while (input.hasNextLine()) {                         // edit this part for flags
+         String line = input.nextLine();                    // l and v
+d27 1
+a27 1
+            continue;
+d63 1
+a63 1
+            out.printf ("%s:%s%n", filename, line);
+d66 1
+a66 1
+            out.printf ("%s%n", filename);
+d69 1
+a69 1
+            out.printf ("%s:%d%n", filename, line_number);
+d72 1
+a72 1
+            out.printf ("%s:%d:%s%n", filename, line_number, line);
+@
+
+
+1.54
+log
+@-
+@
+text
+@d27 1
+a27 1
+            out.printf ("%s:%s%n", filename, line);
+@
+
+
+1.53
+log
+@-
+@
+text
+@d26 1
+a26 1
+         if (matches == false && opts.filename_only == false && opts.number_lines == false && opts.reverse_match == false){           // should I re-add matches to part of the conditional?
+d30 1
+a30 2
+            messages.exit_status = messages.EXIT_FAILURE;
+            exit (messages.exit_status);
+d33 1
+a33 2
+            messages.exit_status = messages.EXIT_FAILURE;
+            exit (messages.exit_status);
+d36 1
+a36 2
+            messages.exit_status = messages.EXIT_FAILURE;
+            exit (messages.exit_status);
+d38 1
+a38 1
+         if (matches == true && opts.filename_only == false && opts.number_lines == false && opts.reverse_match == false){           // should I re-add matches to part of the conditional?
+d50 1
+a50 1
+         if (matches == true && opts.filename_only == false && opts.number_lines == false && opts.reverse_match == true) {    // this is where you just edited
+@
+
+
+1.52
+log
+@-
+@
+text
+@d27 1
+a27 2
+            messages.exit_status = messages.EXIT_FAILURE;
+            exit (messages.exit_status);
+@
+
+
+1.51
+log
+@-
+@
+text
+@d26 1
+a26 1
+         if (matches == false && opts.filename_only == false && opts.number_lines == false && (opts.reverse_match == false || opts.reverse_match == true)){           // should I re-add matches to part of the conditional?
+d30 1
+a30 1
+         else if (matches == false && opts.filename_only == true && opts.number_lines == false && (opts.reverse_match == false || opts.reverse_match == true)){
+d34 1
+a34 1
+         else if (matches == false && opts.filename_only == true && opts.number_lines == true && (opts.reverse_match == false || opts.reverse_match == true)){
+d38 1
+a38 1
+         else if (matches == false && opts.number_lines == true && opts.filename_only == false && (opts.reverse_match == false || opts.reverse_match == true)){
+d41 3
+d45 9
+@
+
+
+1.50
+log
+@-
+@
+text
+@d27 1
+a27 1
+            messages.exit_status = EXIT_FAILURE;
+d31 1
+a31 1
+            messages.exit_status = EXIT_FAILURE;
+d35 1
+a35 1
+            messages.exit_status = EXIT_FAILURE;
+d39 1
+a39 1
+            messages.exit_status = EXIT_FAILURE;
+@
+
+
+1.49
+log
+@-
+@
+text
+@a24 12
+            if (opts.filename_only == true && opts.number_lines == false){
+               out.printf ("%s%n", filename);
+            }
+            else if (opts.filename_only == true && opts.number_lines == true){
+               out.printf ("%s:%d%n", filename, line_number);
+            }
+            else if (opts.filename_only == false && opts.number_lines == true){
+               out.printf ("%s:%d:%s%n", filename, line_number, line);
+            }
+            else{
+               out.printf ("%s:%s%n", filename, line);
+            }
+d26 39
+a64 13
+         else if (opts.reverse_match == false){
+            if (opts.filename_only == true && opts.number_lines == false){
+               out.printf ("%s%n", filename);
+            }
+            else if (opts.filename_only == true && opts.number_lines == true){
+               out.printf ("%s:%d%n", filename, line_number);
+            }
+            else if (opts.filename_only == false && opts.number_lines == true){
+               out.printf ("%s:%d:%s%n", filename, line_number, line);
+            }
+            else{
+               out.printf ("%s:%s%n", filename, line);
+            }
+@
+
+
+1.48
+log
+@-
+@
+text
+@d25 12
+d38 13
+a50 24
+         if (opts.filename_only == false && opts.number_lines == false && opts.reverse_match == false) {           // should I re-add matches to part of the conditional?
+            out.printf ("%s:%s%n", filename, line);
+            break;
+         }
+         else if (matches == false && opts.filename_only == true && opts.number_lines == false && opts.reverse_match == false){
+            out.printf ("%s%n", filename);
+         }
+         else if (matches == false && opts.filename_only == true && opts.number_lines == true && opts.reverse_match == false){
+            out.printf ("%s:%d%n", filename, line_number);
+         }
+         else if (matches == false && opts.number_lines == true && opts.filename_only == false && opts.reverse_match == false){
+            out.printf ("%s:%d:%s%n", filename, line_number, line);
+         }
+         if (matches == true && opts.filename_only == false && opts.number_lines == false && opts.reverse_match == true) {    // this is where you just edited
+            out.printf ("%s:%s%n", filename, line);
+         }
+         else if (matches == true && opts.filename_only == true && opts.number_lines == false && opts.reverse_match == true){
+            out.printf ("%s%n", filename);
+         }
+         else if (matches == true && opts.filename_only == true && opts.number_lines == true && opts.reverse_match == true){
+            out.printf ("%s:%d%n", filename, line_number);
+         }
+         else if (matches == true && opts.number_lines == true && opts.filename_only == false && opts.reverse_match == true){
+            out.printf ("%s:%d:%s%n", filename, line_number, line);
+@
+
+
+1.47
+log
+@-
+@
+text
+@d28 1
+@
+
+
+1.46
+log
+@-
+@
+text
+@d26 1
+a26 1
+         if (matches == false && opts.filename_only == false && opts.number_lines == false && opts.reverse_match == false) {           // should I re-add matches to part of the conditional?
+@
+
+
+1.45
+log
+@-
+@
+text
+@d26 1
+a26 1
+         if (matches == false && opts.filename_only == false && opts.number_lines == false && opts.reverse_match == false && opts.insensitive == false) {           // should I re-add matches to part of the conditional?
+@
+
+
+1.44
+log
+@-
+@
+text
+@d26 1
+a26 1
+         if (matches == false && opts.filename_only == false && opts.number_lines == false && opts.reverse_match == false) {           // should I re-add matches to part of the conditional?
+d64 1
+a64 1
+            scanfile (new Scanner (in), "<stdin>", pattern, opts);                          // should pattern be declared before the try-catch block?
+@
+
+
+1.43
+log
+@-
+@
+text
+@d29 1
+a29 1
+         else if (opts.filename_only == true && opts.number_lines == false){
+d32 1
+a32 1
+         else if (opts.filename_only == true && opts.number_lines == true){
+d35 1
+a35 1
+         else if (opts.number_lines == true && opts.filename_only == false){
+d41 1
+a41 1
+         else if (opts.filename_only == true && opts.number_lines == false){
+d44 1
+a44 1
+         else if (opts.filename_only == true && opts.number_lines == true){
+d47 1
+a47 1
+         else if (opts.number_lines == true && opts.filename_only == false){
+@
+
+
+1.42
+log
+@-
+@
+text
+@d26 1
+a26 1
+         if (opts.filename_only == false && opts.number_lines == false && opts.reverse_match == false) {           // should I re-add matches to part of the conditional?
+d38 1
+a38 1
+         if (matches == false && opts.filename_only == false && opts.number_lines == false && opts.reverse_match == true) {    // this is where you just edited
+@
+
+
+1.41
+log
+@-
+@
+text
+@d38 1
+a38 1
+         if (opts.filename_only == false && opts.number_lines == false && opts.reverse_match == true) {    // this is where you just edited
+@
+
+
+1.40
+log
+@-
+@
+text
+@d26 1
+a26 1
+         if (matches == true && opts.filename_only == false && opts.number_lines == false && opts.reverse_match == false) {           // should I re-add matches to part of the conditional?
+d29 1
+a29 1
+         else if (matches == true && opts.filename_only == true && opts.number_lines == false){
+d32 1
+a32 1
+         else if (matches == true && opts.filename_only == true && opts.number_lines == true){
+d35 1
+a35 1
+         else if (matches == true && opts.number_lines == true && opts.filename_only == false){
+d38 1
+a38 1
+         else if (matches == false && opts.filename_only == false && opts.number_lines == false && opts.reverse_match == true) {    // this is where you just edited
+d41 1
+a41 1
+         else if (matches == false && opts.filename_only == true && opts.number_lines == false){
+d44 1
+a44 1
+         else if (matches == false && opts.filename_only == true && opts.number_lines == true){
+d47 1
+a47 1
+         else if (matches == false && opts.number_lines == true && opts.filename_only == false){
+@
+
+
+1.39
+log
+@-
+@
+text
+@d38 1
+a38 1
+         else if (matches == false && opts.filename_only == false && opts.number_lines == false && opts.reverse_match == false) {    // this is where you just edited
+@
+
+
+1.38
+log
+@-
+@
+text
+@d50 1
+@
+
+
+1.37
+log
+@-
+@
+text
+@d38 12
+a49 2
+         if (matches == false                                                                                                    // *****START HERE******* keep in mind that you're trying to figure out how to
+      }                                                                                                                          // add in the -v option
+@
+
+
+1.36
+log
+@-
+@
+text
+@d26 1
+a26 1
+         else if (matches == true && opts.filename_only == false && opts.number_lines == false && reverse_match == false) {           // should I re-add matches to part of the conditional?
+d38 2
+a39 1
+      }
+@
+
+
+1.35
+log
+@-
+@
+text
+@d26 1
+a26 1
+         else if (matches == true) {           // should I re-add matches to part of the conditional?
+@
+
+
+1.34
+log
+@-
+@
+text
+@d26 1
+a26 1
+         else if (matches == true && opts.filename_only == false && opts.number_lines == false) {           // should I re-add matches to part of the conditional?
+@
+
+
+1.33
+log
+@-
+@
+text
+@d26 1
+a26 1
+         else if (opts.filename_only == false && opts.number_lines == false) {           // should I re-add matches to part of the conditional?
+d29 1
+a29 1
+         else if (opts.filename_only == true && opts.number_lines == false){
+d32 1
+a32 1
+         else if (opts.filename_only == true && opts.number_lines == true){
+d35 1
+a35 1
+         else if (opts.number_lines == true && opts.filename_only == false){
+@
+
+
+1.32
+log
+@-
+@
+text
+@d26 1
+a26 1
+         else if (matches == true  && opts.filename_only == false && opts.number_lines == false) {           // should I re-add matches to part of the conditional?
+d29 1
+a29 1
+         else if (matches == true && opts.filename_only == true && opts.number_lines == false){
+d32 1
+a32 1
+         else if (matches == true && opts.filename_only == true && opts.number_lines == true){
+d35 1
+a35 1
+         else if (matches == true && opts.number_lines == true && opts.filename_only == false){
+@
+
+
+1.31
+log
+@-
+@
+text
+@d33 1
+a33 1
+            out.printf ("%d:%s%n", line_number, filename);
+d36 1
+a36 1
+            out.printf ("%d:%s:%s%n", line_number, filename, line);
+@
+
+
+1.30
+log
+@-
+@
+text
+@d26 1
+a26 1
+         if (matches && opts.filename_only == false && opts.number_lines == false) {           // should I re-add matches to part of the conditional?
+d29 1
+a29 1
+         else if (matches && opts.filename_only == true && opts.number_lines == false){
+d32 1
+a32 1
+         else if (matches && opts.filename_only == true && opts.number_lines == true){
+d35 1
+a35 1
+         else if (matches && opts.number_lines == true && opts.filename_only == false){
+@
+
+
+1.29
+log
+@-
+@
+text
+@d26 1
+a26 1
+         if (opts.filename_only == false && opts.number_lines == false) {           // should I re-add matches to part of the conditional?
+d29 1
+a29 1
+         else if (opts.filename_only == true && opts.number_lines == false){
+d32 1
+a32 1
+         else if (opts.filename_only == true && opts.number_lines == true){
+d35 1
+a35 1
+         else if (opts.number_lines == true && opts.filename_only == false){
+@
+
+
+1.28
+log
+@-
+@
+text
+@d35 1
+a35 1
+         else if (opts.number_lines == true){
+@
+
+
+1.27
+log
+@-
+@
+text
+@d29 1
+a29 1
+         else if (opts.filename_only == true && opts.number_line == false){
+@
+
+
+1.26
+log
+@-
+@
+text
+@d26 1
+a26 1
+         if (opts.filename_only == false && opts.number_lines == false) {
+d29 1
+a29 1
+         else if (opts.filename_only == true){
+d32 1
+a32 1
+         else if (matches && opts.filename_only == true && opts.number_lines == true){
+d35 1
+a35 1
+         else if (matches && opts.number_lines == true){
+@
+
+
+1.25
+log
+@-
+@
+text
+@d33 1
+a33 1
+            out.printf ("%s:%d%n", filename, line_number);
+d36 1
+a36 1
+            out.printf ("%d:%s%n", line_number, line);
+@
+
+
+1.24
+log
+@-
+@
+text
+@d1 1
+a1 1
+// $Id: jgrep.java,v 1.11 2014-04-10 19:55:14-07 - - $
+d27 1
+a27 1
+            out.printf ("%s:%s%n", filename, line);         // I think these printf()'s are formatted wrong (i.e.: should be concantenating, and isn't printing out file names on new lines, etc.)
+d35 3
+@
+
+
+1.23
+log
+@-
+@
+text
+@d40 1
+@
+
+
+1.22
+log
+@-
+@
+text
+@d26 2
+a27 2
+         else if (opts.filename_only == false && opts.number_lines == false) {
+            out.printf ("%s%n", filename, line);         // I think these printf()'s are formatted wrong (i.e.: should be concantenating, and isn't printing out file names on new lines, etc.)
+d33 1
+a33 1
+            out.printf ("%s%d%n", filename, line_number);
+@
+
+
+1.21
+log
+@-
+@
+text
+@d26 1
+a26 1
+         if (opts.filename_only == false && opts.number_lines == false) {
+a39 1
+      Pattern pattern = null;
+@
+
+
+1.20
+log
+@-
+@
+text
+@d27 1
+a27 1
+            out.printf ("%s,%n", filename, line);         // I think these printf()'s are formatted wrong (i.e.: should be concantenating, and isn't printing out file names on new lines, etc.)
+d30 1
+a30 1
+            out.printf ("%s,%n", filename);
+d33 1
+a33 1
+            out.printf ("%s,%d,%n", filename, line_number);
+@
+
+
+1.19
+log
+@-
+@
+text
+@d27 1
+a27 1
+            out.printf ("%s:%n", filename, line);         // I think these printf()'s are formatted wrong (i.e.: should be concantenating, and isn't printing out file names on new lines, etc.)
+d30 1
+a30 1
+            out.printf ("%s:%n", filename);
+d33 1
+a33 1
+            out.printf ("%s,%d:%n", filename, line_number);
+@
+
+
+1.18
+log
+@-
+@
+text
+@d27 1
+a27 1
+            out.printf ("%s:%s", filename, line);         // I think these printf()'s are formatted wrong (i.e.: should be concantenating, and isn't printing out file names on new lines, etc.)
+d30 1
+a30 1
+            out.printf ("%s", filename);
+d33 1
+a33 1
+            out.printf ("%s:n", filename, line_number);
+@
+
+
+1.17
+log
+@-
+@
+text
+@d27 1
+a27 1
+            out.printf ("%s:%s%n", filename + line);         // I think these printf()'s are formatted wrong (i.e.: should be concantenating, and isn't printing out file names on new lines, etc.)
+d30 1
+a30 1
+            out.printf ("%s:%s%n", filename);
+d33 1
+a33 1
+            out.printf ("%s:%s%n", filename + line_number);
+@
+
+
+1.16
+log
+@-
+@
+text
+@d27 1
+a27 1
+            out.printf ("%s:%s%n", filename + " " + line);         // I think these printf()'s are formatted wrong (i.e.: should be concantenating, and isn't printing out file names on new lines, etc.)
+d33 1
+a33 1
+            out.printf ("%s:%s%n", filename, line_number);
+@
+
+
+1.15
+log
+@-
+@
+text
+@d27 1
+a27 1
+            out.printf ("%s:%s%n", filename, line);         // I think these printf()'s are formatted wrong (i.e.: should be concantenating, and isn't printing out file names on new lines, etc.)
+@
+
+
+1.14
+log
+@-
+@
+text
+@a36 1
+}
+d40 1
+d43 1
+a43 1
+            Pattern pattern = Pattern.compile (opts.regex, Pattern.CASE_INSENSITIVE);      // should opts.regex just be regex? why?
+d46 1
+a46 1
+            Pattern pattern = Pattern.compile (opts.regex);
+d49 1
+a49 1
+            scanfile (new Scanner (in), "<stdin>", pattern, opts);
+d65 2
+a66 4
+      exit (messages.exit_status);                       // is this where I put if(opts.insensitive){ blah }?
+   }                                                     // do I do it in a series of conditionals? i.e.: opts.insensitive && opts.filena
+                                                         // me_only, etc?
+
+@
+
+
+1.13
+log
+@-
+@
+text
+@d18 1
+d21 2
+a22 1
+         boolean matches = pattern.matcher (line).find();   // create new variable for the line number for the -n option
+d25 9
+a33 7
+         if (matches) {
+            out.printf ("%s:%s%n", filename, line);         // I think these printf()'s are formatted wrong (i.e.: should be concantenating, and isn't printing out file
+                                                            // names on new lines, etc.)
+      if (opts.filename_only == true){
+               out.printf ("%s:%s%n", filename);
+            else if ((opts.filename_only == true) && (opts.number_line){
+               out.printf ("%s:%s%n", filename);
+d37 1
+@
+
+
+1.12
+log
+@-
+@
+text
+@d26 1
+a26 1
+	    if (opts.filename_only == true){
+@
+
+
+1.11
+log
+@-
+@
+text
+@d1 1
+a1 1
+// $Id: jgrep.java,v 1.10 2014-04-10 16:15:05-07 - - $
+d60 3
+a62 3
+      exit (messages.exit_status);                                                      // is this where I put if(opts.insensitive){ blah }?
+   }                                                                                    // do I do it in a series of conditionals? i.e.: opts.insensitive && opts.filena
+                                                                                        // me_only, etc?
+@
+
+
+1.10
+log
+@-
+@
+text
+@d1 1
+a1 1
+// $Id: jgrep.java,v 1.7 2014-04-10 15:05:13-07 - - $
+d24 3
+a26 2
+            out.printf ("%s:%s%n", filename, line);         // I think these printf()'s are formatted wrong (i.e.: should be concantenating, and isn't printing out filenames on new lines, etc.)
+	    if (opts.filename_only == true){     // does this need matches in it?
+d61 2
+a62 1
+   }                                                                                    // do I do it in a series of conditionals? i.e.: opts.insensitive && opts.filename_only, etc?
+@
+
+
+1.9
+log
+@-
+@
+text
+@d17 1
+a17 2
+                         Pattern pattern) {
+      options opts = new options (args);
+d20 3
+a22 1
+         boolean matches = pattern.matcher (line).find();
+d24 5
+a28 7
+            out.printf ("%s:%s%n", filename, line);
+         }
+	 else if (matches && (opts.filename_only == true)){     // does this need matches in it?
+            out.printf ("%s:%s%n", filename);
+         }
+         else if (opts.reverse_match == true){
+            matches = !matches;
+d36 6
+a41 1
+         Pattern pattern = Pattern.compile (opts.regex);
+d43 1
+a43 1
+            scanfile (new Scanner (in), "<stdin>", pattern);
+d49 1
+a49 1
+                  scanfile (input, filename, pattern);
+a58 3
+      if (opts.insensitive){                                                             // should all this be somewhere else?
+	  Pattern pattern = Pattern.compile (opts.regex, Pattern.CASE_INSENSITIVE);      // should opts.regex just be regex? why?
+      }
+@
+
+
+1.8
+log
+@-
+@
+text
+@d18 1
+@
+
+
+1.7
+log
+@-
+@
+text
+@d1 1
+a1 1
+// $Id: jgrep.java,v 1.6 2014-04-10 14:56:29-07 - - $
+d27 1
+a27 1
+         else if (reverse_match == true){
+@
+
+
+1.6
+log
+@-
+@
+text
+@d1 1
+a1 1
+// $Id: jgrep.java,v 1.5 2014-04-10 14:47:02-07 - - $
+d24 1
+a24 1
+	 else if (matches && (filename_only == true)){     // does this need matches in it?
+d27 3
+a29 2
+         else if ((filename_only == true) && (reverse_match == true)){
+            
+@
+
+
+1.5
+log
+@-
+@
+text
+@d1 1
+a1 1
+// $Id: jgrep.java,v 1.3 2014-04-09 16:40:32-07 - - $
+d24 1
+a24 1
+	 else if (matches && (filename_only == true)){
+d26 3
+@
+
+
+1.4
+log
+@-
+@
+text
+@d24 2
+d50 1
+a50 1
+      if (opts.insensitive){
+d52 3
+a54 2
+      exit (messages.exit_status);                      // is this where I put if(opts.insensitive){ blah }?
+   }                                                    // do I do it in a series of conditionals? i.e.: opts.insensitive && opts.filename_only, etc?
+@
+
+
+1.3
+log
+@-
+@
+text
+@d1 1
+a1 1
+// $Id: jgrep.java,v 1.2 2014-04-02 21:30:12-07 - - $
+d48 2
+@
+
+
+1.2
+log
+@-
+@
+text
+@d48 2
+a49 2
+      exit (messages.exit_status);                            // edit this part for flags i and v?
+   }
+@
+
+
+1.1
+log
+@-
+@
+text
+@d18 2
+a19 2
+      while (input.hasNextLine()) {
+         String line = input.nextLine();
+d48 1
+a48 1
+      exit (messages.exit_status);
+@

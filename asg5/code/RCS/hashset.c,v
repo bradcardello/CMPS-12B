@@ -1,0 +1,521 @@
+head	1.13;
+access;
+symbols;
+locks;
+comment	@ * @;
+
+
+1.13
+date	2014.06.07.11.18.23;	author -;	state -;
+branches;
+next	1.12;
+
+1.12
+date	2014.06.07.10.47.13;	author -;	state -;
+branches;
+next	1.11;
+
+1.11
+date	2014.06.07.10.46.36;	author -;	state -;
+branches;
+next	1.10;
+
+1.10
+date	2014.06.07.10.16.24;	author -;	state -;
+branches;
+next	1.9;
+
+1.9
+date	2014.06.07.06.55.25;	author -;	state -;
+branches;
+next	1.8;
+
+1.8
+date	2014.06.07.03.46.27;	author -;	state -;
+branches;
+next	1.7;
+
+1.7
+date	2014.06.07.03.35.33;	author -;	state -;
+branches;
+next	1.6;
+
+1.6
+date	2014.06.07.03.31.46;	author -;	state -;
+branches;
+next	1.5;
+
+1.5
+date	2014.06.06.23.01.08;	author -;	state -;
+branches;
+next	1.4;
+
+1.4
+date	2014.06.06.22.26.01;	author -;	state -;
+branches;
+next	1.3;
+
+1.3
+date	2014.06.06.21.57.34;	author -;	state -;
+branches;
+next	1.2;
+
+1.2
+date	2014.06.06.08.34.22;	author -;	state -;
+branches;
+next	1.1;
+
+1.1
+date	2014.06.06.08.32.45;	author -;	state -;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.13
+log
+@-
+@
+text
+@// Brad Cardello (bcardell)
+// Kara Ekiss (kekiss)
+// $Id: hashset.c,v 1.12 2014-06-07 03:47:13-07 - - $
+
+#include <assert.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+#include "debug.h"
+#include "hashset.h"
+#include "strhash.h"
+
+#define HASH_NEW_SIZE 15
+
+typedef struct hashnode hashnode;
+struct hashnode {
+   char *word;
+   hashnode *link;
+};
+
+struct hashset {
+   size_t size;               // array size
+   size_t load;               // number of chains
+   hashnode **chains;         // chains are for collision resolution
+                              // every array index is the head of a
+                              // linked list
+};
+
+hashset *new_hashset (void) {
+   hashset *this = malloc (sizeof (struct hashset));
+   assert (this != NULL);
+   this->size = HASH_NEW_SIZE;
+   this->load = 0;
+   size_t sizeof_chains = this->size * sizeof (hashnode *);
+   this->chains = malloc (sizeof_chains);
+   assert (this->chains != NULL);
+   memset (this->chains, 0, sizeof_chains);
+   DEBUGF ('h', "%p -> struct hashset {size = %zd, chains=%p}\n",
+                this, this->size, this->chains);
+   return this;
+}
+
+void free_hashset (hashset *this) {
+   DEBUGF ('h', "free (%p)\n", this);
+   free (this);
+}  
+
+void double_hashset (hashset *this) {
+   size_t new_size = this->size * 2 + 1;
+   hashnode **new_chains = calloc (new_size,
+                                   sizeof (hashnode *));
+   assert (new_chains != NULL);
+   for (size_t i = 0; i < this->size; i++) {
+      hashnode *temp = this->chains[i];
+      while (temp != NULL) {
+         size_t hash_index = strhash (temp->word) % new_size;
+         hashnode *nlink = temp->link;
+         temp->link = new_chains[hash_index];
+         new_chains[hash_index] = temp;
+         temp = nlink;
+      }
+   }
+   free (this->chains);
+   this->chains = new_chains;
+   this->size = new_size;
+}
+
+// loading every word from the dictionary into the hashset
+// when spellchecking, checks to see if that word is already in the
+// hashset.  If it isn't, then it's printed out
+void put_hashset (hashset *this, const char *item) { // searches until
+   //it finds null array slot, and nserts word; allocates new hashnode
+   size_t hash_index = strhash (item) % this->size;
+   hashnode *curr = this->chains[hash_index];
+   for (; curr != NULL; curr = curr->link) {
+      int cmp = strcmp (curr->word, item);
+      if (cmp == 0) return;
+   }
+   curr = this->chains[hash_index];
+   hashnode *n = malloc (sizeof (struct hashnode));
+   assert (n != NULL);
+   n->link = curr;
+   n->word = strdup (item);
+   this->chains[hash_index] = n;
+   this->load++;           //might need to be ++this->load
+   if (this->load * 2 > this->size) double_hashset (this);
+   else return;
+}
+
+bool has_hashset (hashset *this, const char *item) { // searches to see
+   // if item is already in the hashset
+   //STUBPRINTF ("hashset=%p, item=%s\n", this, item);
+   size_t hash_index = strhash (item) % this->size;
+   for (hashnode *curr = this->chains[hash_index]; curr != NULL;
+                                                   curr = curr->link) {
+      int cmp = strcmp (curr->word, item);
+      if (cmp == 0) return true;
+   }
+   return false;
+}
+
+void chain_count (hashset *this, int index) {
+   char *chains = "chains of size";
+   size_t count = 0;
+   int numchains = 0;
+   for (size_t i = 0; i < this->size; i++) {
+      for (hashnode *curr = this->chains[i]; curr != NULL;
+                                             curr = curr->link) {
+         hashnode *n = this->chains[i];
+         numchains++;
+         n = n->link;
+      }
+      if (numchains == index) count++;
+      numchains = 0;
+   }
+   if (count != 0) printf ("%7zu %11s %d\n", count, chains, index);
+}
+
+void big_dump (hashset *this) {
+   char* eq = "=";
+   for (size_t i = 0; i < this->size; i++) {
+      hashnode *n = this->chains[i];
+      if (n == NULL) continue;
+      printf ("array[%10zu]",i);
+      printf (" = %20lu \"%s\"\n", strhash(n->word), n->word);
+      for (hashnode *curr = this->chains[i + 1]; curr !=NULL;
+                                                 curr = curr->link) {
+         printf ("%19s %20lu \"%s\"\n", eq, strhash (n->word), n->word);
+      }
+      n = n->link;
+   }
+}
+
+void debug_dump (hashset *this, int debug_num) {
+   printf ("%7zu words in the hash set\n", this->load);
+   printf ("%7zu size of the hash array\n", this->size);
+   
+   for (int i = 1; i < 20; i++) {
+      chain_count (this, i);
+   }
+   if (debug_num == 2) {
+      big_dump (this);
+      debug_num = 0;
+   }
+}
+@
+
+
+1.12
+log
+@-
+@
+text
+@d2 2
+a3 1
+// $Id: hashset.c,v 1.10 2014-06-07 03:16:24-07 - - $
+@
+
+
+1.11
+log
+@-
+@
+text
+@d75 1
+a75 1
+   for (; curr != NULL; curr = curr->link) {     // curr->link and stuff like that might need to be malloc'd first
+d94 2
+a95 1
+   for (hashnode *curr = this->chains[hash_index]; curr != NULL; curr = curr->link) {
+d107 2
+a108 1
+      for (hashnode *curr = this->chains[i]; curr != NULL; curr = curr->link) {
+@
+
+
+1.10
+log
+@-
+@
+text
+@d2 1
+a2 1
+// $Id: hashset.c,v 1.9 2014-06-06 23:55:25-07 - - $
+d22 2
+a23 3
+   size_t size;               // the array size
+   size_t load;               // how much data is in the hashtable (DOESN'T DEAL WITH SIZE, only chains)
+                              // look at step 5 in the hashset implementation
+d25 2
+a26 3
+                              // chaining is one way to solve collision resolution
+                              // every array index is the head of a linked list
+                              // other way is linear probing - search forward for empty slot
+d58 1
+a58 1
+         temp->link = new_chains[hash_index];         // might need to go in opposite
+d68 5
+a72 5
+// work on main before hashset????
+// you're loading every word from the dictionary into the hashset
+// when you're spellchecking, it checks to see if that word is already in the
+// hashset.  If it isn't, then it's incorrectly spelled
+void put_hashset (hashset *this, const char *item) {           // searches until it finds null array slot, and inserts word; allocates new hashnode
+d90 2
+a91 1
+bool has_hashset (hashset *this, const char *item) {           // searches to see if item is already in the hashset
+d93 2
+a94 3
+   size_t hash_index = strhash (item) % this->size;                   // item might need to be "word", like his original code
+   for (hashnode *curr = this->chains[hash_index]; curr != NULL; curr = curr->link) {     // curr->link and stuff like that might need
+                                                                        // to be malloc'd first
+@
+
+
+1.9
+log
+@-
+@
+text
+@d2 1
+a2 1
+// $Id: hashset.c,v 1.8 2014-06-06 20:46:27-07 - - $
+d88 2
+a89 2
+   if (this->load * 2 > this->size) double_hashset (this);     // THIS IS CAUSING A SEGFAULT
+   else return;                                                       // THIS TOO
+a97 1
+      printf("%d", cmp);
+d103 43
+@
+
+
+1.8
+log
+@-
+@
+text
+@d2 1
+a2 1
+// $Id: hashset.c,v 1.6 2014-06-06 20:31:46-07 - - $
+d48 1
+a48 3
+}
+
+//void debug_dump (
+d51 2
+a52 16
+  /*size_t newsize = this->size * 2 + 1;
+  hashnode **new_chain = calloc(newsize, sizeof(hashnode *));
+  for(size_t index = 0; index < this->size; index++){
+    hashnode *tmp = this->chains[index];
+    while (tmp != NULL){
+      hashcode_t hash_index = strhash (tmp->word) % newsize;
+      hashnode *link = tmp->link;
+      tmp->link = new_chain[hash_index];
+      new_chain[hash_index] = tmp;
+      tmp = link;
+    }
+  }
+  free(this->chains);
+  this->chains = new_chain;
+  this->size = newsize;*/
+   hashnode **new_chains = calloc (2 * this->size + 1,
+d58 2
+a59 2
+         size_t hash_index = strhash (temp->word) % this->size;
+         hashnode *n = temp->link;
+d62 1
+a62 1
+         temp = n;
+d67 1
+a67 1
+   this->size = 2*this->size + 1;
+d74 1
+a74 3
+void put_hashset (hashset *this, const char *item) {           // searches until it finds null array slot, and inserts word
+                                                               // allocates new hashnode
+   //STUBPRINTF ("hashset=%p, item=%s\n", this, item);
+d89 1
+a89 1
+   else return;                                                        // THIS TOO
+d98 1
+@
+
+
+1.7
+log
+@-
+@
+text
+@d52 16
+a67 1
+void double_hashset (hashset *this, char *item) {
+d72 7
+a78 14
+      hashnode *curr = this-<chains[i];
+      while (curr != NULL) {
+         hashnode *tmp = curr;
+         curr = curr->link;
+         size_t hash_index = strhash (item) % this->size;
+         curr = new_chains[hash_index];         // might need to go in opposite
+         curr->word = this->chains[hash_index]->word;
+         new_chains[hash_index] = curr;
+         curr = curr->link;
+         /*size_t hash_index = strhash (item) % this->size;
+         curr->link = new_chains[hash_index];         // might need to go in opposite
+         curr->word = this->chains[hash_index]->word;
+         new_chains[hash_index] = curr;
+         curr = curr->link;*/
+d106 1
+a106 1
+   if (this->load * 2 > this->size) double_hashset (this, n->word);     // THIS IS CAUSING A SEGFAULT
+@
+
+
+1.6
+log
+@-
+@
+text
+@d2 1
+a2 1
+// $Id: hashset.c,v 1.5 2014-06-06 16:01:08-07 - - $
+d60 1
+d62 1
+a62 1
+         curr->link = new_chains[hash_index];         // might need to go in opposite
+@
+
+
+1.5
+log
+@-
+@
+text
+@d2 1
+a2 1
+// $Id: hashset.c,v 1.4 2014-06-06 15:26:01-07 - - $
+d57 3
+a59 2
+      hashnode *curr = this->chains[i];
+      while (curr->word != NULL) {
+d62 1
+d65 5
+d97 2
+a98 2
+   /*if (this->load * 2 > this->size) double_hashset (this, n->word);     // THIS IS CAUSING A SEGFAULT
+   else return;*/                                                         // THIS TOO
+@
+
+
+1.4
+log
+@-
+@
+text
+@d2 1
+a2 1
+// $Id: hashset.c,v 1.2 2014-06-06 01:34:22-07 - - $
+d53 1
+a53 1
+   hashset **new_chains = calloc (2 * this->size + 1,
+d76 1
+a76 1
+   STUBPRINTF ("hashset=%p, item=%s\n", this, item);
+d89 3
+a91 3
+   ++this->load;
+   if (this->load * 2 > this->size) double_hashset (this, n->word);     // n->word used to be item
+   else return;
+@
+
+
+1.3
+log
+@-
+@
+text
+@d53 1
+a53 1
+   hashnode **new_chains = calloc (2 * this->size + 1,
+d55 1
+d77 1
+a77 1
+   size_t hash_index = strhash (item) % this->size;            // item might need to be "word", like his original code
+d85 1
+d90 1
+a90 1
+   if (this->load * 2 > this->size) double_hashset (this, item);
+@
+
+
+1.2
+log
+@-
+@
+text
+@d2 1
+a2 1
+// $Id: hashset.c,v 1.9 2014-05-15 20:01:08-07 - - $
+d50 2
+d53 2
+a54 1
+   hashnode **new_chains = calloc (2*this->size + 1, sizeof (hashnode *));
+d59 1
+a59 1
+         curr->link = new_chains[hash_index];
+d68 1
+d86 4
+a89 1
+   curr = n;
+d93 1
+a93 1
+   STUBPRINTF ("hashset=%p, item=%s\n", this, item);
+d95 2
+a96 3
+   hashnode *curr = this->chains[hash_index];
+   for (; curr != NULL; curr = curr->link) {     // curr->link and stuff like that might need
+                                                                                      // to be malloc'd first
+a98 1
+      else return false;
+d100 1
+a100 1
+   return true;
+@
+
+
+1.1
+log
+@-
+@
+text
+@d51 2
+a52 2
+   hashnode **new_chains = calloc ((2*this->size + 1) * sizeof (hashnode *));
+   for (int i = 0; i < this->size; i++) {
+@

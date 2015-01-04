@@ -1,0 +1,7 @@
+* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ mkc: starting matching.java
+* matching.java: $Id: matching.java,v 1.2 2014-03-24 20:51:41-07 - - $
+* javac -Xlint matching.java
+* jar cfm matching Manifest matching.class
+* chmod +x matching
+* rm -f matching.class
+* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ mkc: finished matching.java

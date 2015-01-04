@@ -1,0 +1,69 @@
+head	1.2;
+access;
+symbols;
+locks;
+comment	@ * @;
+
+
+1.2
+date	2014.06.07.11.18.23;	author -;	state -;
+branches;
+next	1.1;
+
+1.1
+date	2014.06.06.08.32.45;	author -;	state -;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.2
+log
+@-
+@
+text
+@// Brad Cardello (bcardell)
+// Kara Ekiss (kekiss)
+// $Id: yyextern.h,v 1.1 2014-06-06 01:32:45-07 - - $
+
+#ifndef __YYEXTERN_H__
+#define __YYEXTERN_H__
+
+//
+// DESCRIPTION
+//    Definitions of external names used by flex-generated code.
+//
+
+#include <stdio.h>
+
+extern FILE *yyin;        // File currently being read
+
+extern char *yytext;      // Pointer to the string that was found
+
+extern int yy_flex_debug; // yylex's verbose tracing flag
+
+extern int yylex (void);  // Read next word from opened file yyin
+
+extern int yylineno;      // Line number within the current file
+
+extern int yylex_destroy (void);
+                          // Cleans up flex's buffers when done
+                          // Avoids valgrind memory leak report.
+
+#endif
+
+@
+
+
+1.1
+log
+@-
+@
+text
+@d1 3
+a3 1
+// $Id: yyextern.h,v 1.2 2013-05-21 19:58:24-07 - - $
+@
