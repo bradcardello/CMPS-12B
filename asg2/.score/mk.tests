@@ -1,0 +1,12 @@
+#!/bin/sh -x
+# $Id: mk.tests,v 1.1 2013-04-11 18:53:06-07 - - $
+edfile -e input.test <test1.edf >test1.stdout 2>test1.stderr
+echo exit status: $? >test1.status
+edfile -e input.test <test2.edf >test2.stdout 2>test2.stderr
+echo exit status: $? >test2.status
+edfile -e input.test <test3.edf >test3.stdout 2>test3.stderr
+echo exit status: $? >test3.status
+edfile -e input.test <test4.edf >test4.stdout 2>test4.stderr
+echo exit status: $? >test4.status
+edfile -e /no/such file.error <test5.edf >test5.stdout 2>test5.stderr
+echo exit status: $? >test5.status

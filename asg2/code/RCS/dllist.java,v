@@ -1,0 +1,1273 @@
+head	1.40;
+access;
+symbols;
+locks
+	bcardell:1.2;
+comment	@# @;
+
+
+1.40
+date	2014.04.29.10.09.53;	author -;	state -;
+branches;
+next	1.39;
+
+1.39
+date	2014.04.29.09.26.00;	author -;	state -;
+branches;
+next	1.38;
+
+1.38
+date	2014.04.29.08.27.49;	author -;	state -;
+branches;
+next	1.37;
+
+1.37
+date	2014.04.29.08.27.21;	author -;	state -;
+branches;
+next	1.36;
+
+1.36
+date	2014.04.29.08.24.52;	author -;	state -;
+branches;
+next	1.35;
+
+1.35
+date	2014.04.29.08.13.59;	author -;	state -;
+branches;
+next	1.34;
+
+1.34
+date	2014.04.29.08.13.36;	author -;	state -;
+branches;
+next	1.33;
+
+1.33
+date	2014.04.29.06.14.15;	author -;	state -;
+branches;
+next	1.32;
+
+1.32
+date	2014.04.29.06.08.57;	author -;	state -;
+branches;
+next	1.31;
+
+1.31
+date	2014.04.29.06.07.58;	author -;	state -;
+branches;
+next	1.30;
+
+1.30
+date	2014.04.29.06.05.15;	author -;	state -;
+branches;
+next	1.29;
+
+1.29
+date	2014.04.29.06.02.26;	author -;	state -;
+branches;
+next	1.28;
+
+1.28
+date	2014.04.29.06.02.06;	author -;	state -;
+branches;
+next	1.27;
+
+1.27
+date	2014.04.29.06.00.58;	author -;	state -;
+branches;
+next	1.26;
+
+1.26
+date	2014.04.29.05.18.57;	author -;	state -;
+branches;
+next	1.25;
+
+1.25
+date	2014.04.29.05.14.38;	author -;	state -;
+branches;
+next	1.24;
+
+1.24
+date	2014.04.29.05.03.56;	author -;	state -;
+branches;
+next	1.23;
+
+1.23
+date	2014.04.29.05.02.04;	author -;	state -;
+branches;
+next	1.22;
+
+1.22
+date	2014.04.29.04.15.12;	author -;	state -;
+branches;
+next	1.21;
+
+1.21
+date	2014.04.29.02.05.33;	author -;	state -;
+branches;
+next	1.20;
+
+1.20
+date	2014.04.29.00.56.25;	author -;	state -;
+branches;
+next	1.19;
+
+1.19
+date	2014.04.29.00.39.28;	author -;	state -;
+branches;
+next	1.18;
+
+1.18
+date	2014.04.27.21.07.37;	author -;	state -;
+branches;
+next	1.17;
+
+1.17
+date	2014.04.25.20.55.47;	author -;	state -;
+branches;
+next	1.16;
+
+1.16
+date	2014.04.25.20.49.45;	author -;	state -;
+branches;
+next	1.15;
+
+1.15
+date	2014.04.25.20.45.40;	author -;	state -;
+branches;
+next	1.14;
+
+1.14
+date	2014.04.25.20.42.56;	author -;	state -;
+branches;
+next	1.13;
+
+1.13
+date	2014.04.25.20.16.06;	author -;	state -;
+branches;
+next	1.12;
+
+1.12
+date	2014.04.25.20.01.22;	author -;	state -;
+branches;
+next	1.11;
+
+1.11
+date	2014.04.25.19.56.23;	author -;	state -;
+branches;
+next	1.10;
+
+1.10
+date	2014.04.25.19.55.48;	author -;	state -;
+branches;
+next	1.9;
+
+1.9
+date	2014.04.25.19.55.14;	author -;	state -;
+branches;
+next	1.8;
+
+1.8
+date	2014.04.25.19.53.17;	author -;	state -;
+branches;
+next	1.7;
+
+1.7
+date	2014.04.25.19.17.59;	author -;	state -;
+branches;
+next	1.6;
+
+1.6
+date	2014.04.24.22.33.44;	author -;	state -;
+branches;
+next	1.5;
+
+1.5
+date	2014.04.24.22.07.06;	author -;	state -;
+branches;
+next	1.4;
+
+1.4
+date	2014.04.24.21.15.21;	author -;	state -;
+branches;
+next	1.3;
+
+1.3
+date	2014.04.24.00.06.43;	author -;	state -;
+branches;
+next	1.2;
+
+1.2
+date	2014.04.23.23.51.38;	author -;	state -;
+branches;
+next	1.1;
+
+1.1
+date	2014.04.23.23.51.06;	author -;	state -;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.40
+log
+@-
+@
+text
+@// Brad Cardello (bcardell
+// Kara Ekiss (kekiss))
+// $Id: dllist.java,v 1.17 2014-04-25 13:55:47-07 - - $
+
+import java.util.*;
+import static java.lang.System.*;
+
+class dllist {
+
+   public enum position {FIRST, PREVIOUS, FOLLOWING, LAST};
+
+   private class node {
+      String item;
+      node prev;
+      node next;
+   }
+
+   private node first = null;
+   private node current = null;
+   private node last = null;
+   private int currentposition = 0;
+   private int nodecount = 0;
+   
+   public void setposition (position pos) {
+      switch (pos){
+         case FIRST:
+            currentposition = 0;
+            current = first;
+            break;
+         case PREVIOUS:
+            currentposition -= 1;
+            current = current.prev;
+            break;
+         case FOLLOWING:
+            currentposition += 1;
+            current = current.next;
+            break;
+         case LAST:
+            currentposition = nodecount - 1;
+            current = last;
+            break;
+         default:
+            auxlib.exit_status = auxlib.EXIT_FAILURE;
+            auxlib.die();
+            throw new UnsupportedOperationException();  
+      }
+   }
+
+   public boolean isempty () {
+      return (nodecount == 0);
+   }
+
+   public String getitem () {
+      if (current.item == null){
+         throw new NoSuchElementException();
+      }
+      else{
+         return current.item;
+      }
+   }
+
+   public int getposition () {
+      if (nodecount == 0) {
+         throw new NoSuchElementException();
+      }
+      else {
+         return currentposition;
+      }
+   }
+
+   public void delete () {
+      if (nodecount == 0){
+         throw new NoSuchElementException();
+      }
+      else{
+         current.prev.next = current.next;
+         current.next.prev = current.prev;
+         if (current.next == null){
+            current = current.prev;
+         }
+         else{
+            current = current.next;
+         }
+         nodecount--;
+      }
+   }
+
+   public void insert (String item, position pos) {
+      node n = new node();
+      node l;
+      node r;
+      n.item = item;
+      nodecount++;
+      if (first == null){
+         n.prev = null;
+         n.next = null;
+         first = n;
+         last = n;
+         current = n;
+         return;
+      }
+      switch (pos){
+         case FIRST:
+            n.next = first;
+            first.prev = n;
+            first = n;
+            current = n;
+            break;
+         case PREVIOUS:
+            n.prev = current.prev;
+            n.next = current;
+            if (current.next != null){
+               current.prev.next = n;
+            }
+            current.prev = n;
+            current = n;
+            break;
+         case FOLLOWING:
+            n.prev = current;
+            n.next = current.next;
+            if (current.next != null){
+               current.next.prev = n;
+            }
+            current.next = n;
+            current = n;
+            break;
+         case LAST:
+            n.prev = last;
+            n.next = null;
+            last.next = n;
+            last = n;
+            current = n;
+            break;
+         default:
+            auxlib.exit_status = auxlib.EXIT_FAILURE;
+            auxlib.die();
+            throw new UnsupportedOperationException();
+      }
+   }
+
+}
+
+@
+
+
+1.39
+log
+@-
+@
+text
+@d1 2
+a2 1
+// Brad Cardello (bcardell)
+d43 2
+d135 2
+d141 2
+a142 3
+   public static void printlast(dllist lines){
+      lines.setposition(position.LAST);
+      out.printf(lines.getitem());
+@
+
+
+1.38
+log
+@-
+@
+text
+@a3 3
+// GO TO http://www.dreamincode.net/forums/topic/273905-double-linked-lists-dll/ for info on doubly linked lists
+// need to look up generics (for example, <E>)
+
+d21 1
+a21 1
+   private int nodecount = 0;          // he wrote this down by hand, might be wrong
+d23 1
+a23 2
+   // how/where do I set current.item, current.prev, current.next?
+   public void setposition (position pos) {           // requires switch statement, the way it is now is wrong
+d38 1
+a38 1
+            currentposition = nodecount - 1;                      // what would last be?
+d41 2
+a42 2
+         default:                                           // if it's supposed to be silently ignored, should I throw an exception at all?
+            throw new UnsupportedOperationException();      // how do we know which position it's supposed to go to?  is it in the text file?
+a45 1
+   // 99% SURE IT'S WORKING
+a49 1
+   // PROBABLY WORKING
+d52 1
+a52 1
+         throw new NoSuchElementException();      // why doesn't this work?
+a58 1
+   // MIGHT WANT TO CHANGE EXCEPTION, OTHER THAN THAT, IT SHOULD BE OK
+a67 1
+   // MIGHT WORK
+d69 1
+a69 1
+      if (nodecount == 0){                               // might wanna reorder these conditionals
+d73 3
+a75 3
+         current.prev.next = current.next;               // goes to prev, then next
+         current.next.prev = current.prev;               // should current be currentposition?  do I need to
+         if (current.next == null){                   // create a new node named current and assign its position to currentposition?  seems redundant
+a84 1
+   // PROBABLY WORKING
+d109 3
+a111 1
+            current.prev.next = n;
+d131 1
+a131 1
+         default:                         // what do I do for default?  throw an exception?
+a138 2
+   }
+}
+@
+
+
+1.37
+log
+@-
+@
+text
+@a139 1
+            break;
+@
+
+
+1.36
+log
+@-
+@
+text
+@d114 1
+d121 1
+d130 1
+d137 1
+d140 1
+@
+
+
+1.35
+log
+@-
+@
+text
+@a114 16
+            l = current.prev;
+            r = current;
+            n.prev = l;
+            n.next = r;
+            l.next = n;
+            r.prev = n;
+            current = n;
+         case FOLLOWING: 
+            l = current;
+            r = current.next;
+            n.prev = l;
+            n.next = r;
+            l.next = n;
+            r.prev = n;
+            current = n;
+         /*case PREVIOUS:
+d123 3
+a125 1
+            current.next.prev = n;
+d127 1
+a127 1
+            current = n;*/
+@
+
+
+1.34
+log
+@-
+@
+text
+@d120 1
+a120 1
+            right.prev = n;
+d128 1
+a128 1
+            right.prev = n;
+@
+
+
+1.33
+log
+@-
+@
+text
+@d96 2
+a113 4
+            /*n.prev = null;
+            n.next = first;
+            first.prev = n;
+            first = n;*/
+d115 16
+d141 1
+a141 1
+            current = n;
+@
+
+
+1.32
+log
+@-
+@
+text
+@d99 2
+d104 1
+@
+
+
+1.31
+log
+@-
+@
+text
+@d8 1
+@
+
+
+1.30
+log
+@-
+@
+text
+@d136 1
+a136 1
+      lines.setposition(dllist.LAST);
+@
+
+
+1.29
+log
+@-
+@
+text
+@d136 1
+a136 1
+      lines.setposition(lines.LAST);
+@
+
+
+1.28
+log
+@-
+@
+text
+@d136 1
+a136 1
+      lines.setposition(LAST);
+@
+
+
+1.27
+log
+@-
+@
+text
+@d136 1
+a136 1
+      setpositition(LAST);
+@
+
+
+1.26
+log
+@-
+@
+text
+@d135 4
+@
+
+
+1.25
+log
+@-
+@
+text
+@d31 1
+d35 1
+d39 1
+d43 1
+@
+
+
+1.24
+log
+@-
+@
+text
+@d30 1
+d33 1
+d36 1
+d39 1
+@
+
+
+1.23
+log
+@-
+@
+text
+@d89 5
+a94 5
+         if (first == null){
+            first = n;
+            last = n;
+            current = n;
+         }
+@
+
+
+1.22
+log
+@-
+@
+text
+@d90 5
+d96 3
+a98 11
+            if (first == null)
+            {
+               first = n; 
+               last = n;   // If this is the only node in your list, then it is both the first and last node in the list
+            }
+                                 // Otherwise you can just link your new node to first and then change first to point to your new node that you're inserting
+            else{
+               n.next = first;
+               first.prev = n;
+               first = n;
+            }
+@
+
+
+1.21
+log
+@-
+@
+text
+@d91 13
+a103 1
+            n.prev = null;
+d106 1
+a106 5
+            first = n;
+            current = n;
+            current.item = n.item;
+            current.prev = n.prev;
+            current.prev = n.next;
+a112 3
+            current.item = n.item;
+            current.prev = n.prev;
+            current.prev = n.next;
+a118 3
+            current.item = n.item;
+            current.prev = n.prev;
+            current.prev = n.next;
+a124 3
+            current.item = n.item;
+            current.prev = n.prev;
+            current.prev = n.next;
+@
+
+
+1.20
+log
+@-
+@
+text
+@d25 1
+a25 1
+   // UNSURE OF WHAT CURRENTPOSITION SHOULD BE, EXCEPT FOR FIRST
+d96 3
+d105 3
+d114 3
+d123 3
+@
+
+
+1.19
+log
+@-
+@
+text
+@d23 1
+a23 1
+   public int nodecount = 0;          // he wrote this down by hand, might be wrong
+@
+
+
+1.18
+log
+@-
+@
+text
+@d23 1
+a23 1
+   private int nodecount = 0;          // he wrote this down by hand, might be wrong
+@
+
+
+1.17
+log
+@-
+@
+text
+@d1 119
+a119 115
+// Brad Cardello (bcardell)
+// $Id: dllist.java,v 1.6 2014-04-24 15:33:44-07 - - $
+
+// GO TO http://www.dreamincode.net/forums/topic/273905-double-linked-lists-dll/ for info on doubly linked lists
+// need to look up generics (for example, <E>)
+
+import java.util.*;
+
+class dllist {
+
+   public enum position {FIRST, PREVIOUS, FOLLOWING, LAST};
+
+   private class node {
+      String item;
+      node prev;
+      node next;
+   }
+
+   private node first = null;
+   private node current = null;
+   private node last = null;
+   private int currentposition = 0;
+   private int nodecount = 0;          // he wrote this down by hand, might be wrong
+   
+   // UNSURE OF WHAT CURRENTPOSITION SHOULD BE, EXCEPT FOR FIRST
+   public void setposition (position pos) {           // requires switch statement, the way it is now is wrong
+      switch (pos){
+         case FIRST:
+            currentposition = 0;
+         case PREVIOUS:
+            currentposition = 1;
+         case FOLLOWING:
+            currentposition = 2;
+         case LAST:
+            currentposition = 3;
+         default:
+            throw new UnsupportedOperationException();      // how do we know which position it's supposed to go to?  is it in the text file?
+      }
+   }
+
+   // 99% SURE IT'S WORKING
+   public boolean isempty () {
+      return (nodecount == 0);
+   }
+
+   // PROBABLY WORKING
+   public String getitem () {
+      if (current.item == null){
+         throw new NoSuchElementException();      // why doesn't this work?
+      }
+      else{
+         return current.item;
+      }
+   }
+
+   // MIGHT WANT TO CHANGE EXCEPTION, OTHER THAN THAT, IT SHOULD BE OK
+   public int getposition () {
+      if (nodecount == 0) {
+         throw new UnsupportedOperationException();
+      }
+      else {
+         return currentposition;
+      }
+   }
+
+   // MIGHT WORK
+   public void delete () {
+      current.prev.next = current.next;               // goes to prev, then next
+      current.next.prev = current.prev;               // should current be currentposition?  do I need to
+      if (current.next == null){                   // create a new node named current and assign its position to currentposition?  seems redundant
+         current = current.prev;
+      }
+      else{
+         current = current.next;
+      }
+      nodecount--;
+      throw new UnsupportedOperationException();
+   }
+
+   // PROBABLY WORKING
+   public void insert (String item, position pos) {
+      node n = new node();
+      n.item = item;
+      nodecount++;
+      switch (pos){
+         case FIRST:
+            n.prev = null;
+            n.next = first;
+            first.prev = n;
+            first = n;
+            current = n;
+         case PREVIOUS:
+            n.prev = current.prev;
+            n.next = current;
+            current.prev.next = n;
+            current.prev = n;
+            current = n;
+         case FOLLOWING:
+            n.prev = current;
+            n.next = current.next;
+            current.next.prev = n;
+            current.next = n;
+            current = n;
+         case LAST:
+            n.prev = last;
+            n.next = null;
+            last.next = n;
+            last = n;
+            current = n;
+         default:                         // what do I do for default?  throw an exception?
+            throw new UnsupportedOperationException();
+      }
+   }
+
+}
+@
+
+
+1.16
+log
+@-
+@
+text
+@d24 2
+a25 1
+
+d29 2
+d32 1
+a32 1
+         case PREVIOUS:
+d34 1
+a34 1
+         case FOLLOWING:
+a35 2
+         case LAST:
+            currentposition = 4;
+d41 1
+d46 1
+d56 1
+d66 1
+d80 1
+@
+
+
+1.15
+log
+@-
+@
+text
+@a44 1
+      //return current.item;                // should this be a specific node?  not just the class?
+d54 6
+a59 2
+      return currentposition;
+      throw new UnsupportedOperationException();
+@
+
+
+1.14
+log
+@-
+@
+text
+@d7 2
+d50 1
+a50 1
+         retun current.item;
+@
+
+
+1.13
+log
+@-
+@
+text
+@d43 1
+a43 1
+      return current.item;                // should this be a specific node?  not just the class?
+d47 3
+d84 1
+d90 1
+@
+
+
+1.12
+log
+@-
+@
+text
+@d45 1
+a45 1
+         throw new NoSuchElementException;      // why doesn't this work?
+d63 1
+d70 1
+d94 2
+a95 1
+         //default:                          what do I do for default?  throw an exception?
+a96 27
+      /*if (pos == FIRST) {                  // instead, use switch statement with if, else-if checking if certain values like next are null
+         n.item = item;
+         n.prev = null;
+         n.next = first;
+         first.prev = n;
+         first = n;
+      }
+      else if (pos == PREVIOUS) {
+         n.item = item;
+         n.prev = current.prev.prev;       //  not sure, since there's no node made that's 2 nodes before the current node, can you do current.prev.prev?
+         n.next = current;
+         current.prev = n;       // should this be the other way around?  I'm not sure which should be which.  should I just do the opposite in a new line?
+      }
+      else if (pos == FOLLOWING) {        // THIS IS A NEW NODE BEING INSERTED AFTER THE CURRENT NODE
+         n.item = item;
+         n.prev = current;
+         n.next = current.next.next;
+         current.next = n;
+      }
+      else if (pos == LAST) {
+         n.item = item;
+         n.prev = last;
+         n.next = null;
+         last.next = n;
+         last = n;
+      }*/
+      throw new UnsupportedOperationException();
+@
+
+
+1.11
+log
+@-
+@
+text
+@d45 1
+a45 1
+         throw new NoSuchElementException();      // do I end up deleting these sort of exceptions?  do I change it to NoSuchElementException?
+@
+
+
+1.10
+log
+@-
+@
+text
+@d44 1
+a44 1
+      if (node.item == null){
+@
+
+
+1.9
+log
+@-
+@
+text
+@d44 1
+a44 1
+      if (item == null){
+@
+
+
+1.8
+log
+@-
+@
+text
+@d44 3
+a46 1
+      throw new UnsupportedOperationException();      // do I end up deleting these sort of exceptions?  do I change it to NoSuchElementException?
+@
+
+
+1.7
+log
+@-
+@
+text
+@d24 12
+a35 2
+      currentposition = pos;
+      throw new UnsupportedOperationException();      // how do we know which position it's supposed to go to?  is it in the text file?
+d66 1
+a68 1
+            n.item = item;
+d73 1
+d75 1
+a75 2
+            n.item = item;
+            n.prev = current.prev.prev;
+d78 1
+a79 1
+            n.item = item;
+d81 1
+a81 1
+            n.next = current.next.next;
+d83 1
+a84 1
+            n.item = item;
+d89 1
+@
+
+
+1.6
+log
+@-
+@
+text
+@d2 1
+a2 1
+// $Id: dllist.java,v 1.4 2014-04-24 14:15:21-07 - - $
+d24 1
+d29 1
+a29 7
+      if (nodecount == 0){
+         return true;
+      }
+      else{
+         return false;
+      }
+      throw new UnsupportedOperationException();
+d43 4
+a46 4
+      curr.prev.next = curr.next;               // goes to prev, then next
+      curr.next.prev = curr.prev;               // should curr be currentposition?  do I need to
+      if (curr.next == null){                   // create a new node named curr and assign its position to currentposition?  seems redundant
+         curr = curr.prev;
+d49 1
+a49 1
+         curr = curr.next;
+d56 26
+a81 1
+      if (pos == FIRST) {                  // instead, use switch statement with if, else-if checking if certain values like next are null
+d92 1
+a92 1
+         current.prev = n;       // should this be the other way around?  I'm not sure which should be which.  should I just, in a new line, do the opposite?
+d95 4
+a98 1
+         
+d101 6
+a106 2
+         
+      }
+@
+
+
+1.5
+log
+@-
+@
+text
+@d61 1
+a61 1
+      if (pos == FIRST) {
+d69 2
+a70 2
+         n.item = prev.item;n       // should I be switching these around?  i.e.: current.item = item or something like that?
+         //n.prev =          not sure, since there's no node made that's 2 nodes before the current node
+d72 1
+a72 2
+         current.prev = n;
+         current = n;
+d74 1
+a74 1
+      else if (pos == FOLLOWING) {
+@
+
+
+1.4
+log
+@-
+@
+text
+@d2 1
+a2 1
+// $Id: dllist.java,v 1.2 2014/04/23 23:51:38 - - bcardell $
+d38 1
+a38 1
+      return node.item;                // should this be a specific node?  not just the class?
+d60 21
+@
+
+
+1.3
+log
+@-
+@
+text
+@d1 63
+a63 63
+// Bad Cadello (bcadell)
+// $Id: dllist.java,v 1.2 2014-04-23 16:51:38-07 - - $
+
+// GO TO http://www.deamincode.net/foums/topic/273905-double-linked-lists-dll/ fo info on doubly linked lists
+// need to look up geneics (fo example, <E>)
+
+class dllist {
+
+   public enum position {FIRST, PREVIOUS, FOLLOWING, LAST};
+
+   pivate class node {
+      Sting item;
+      node pev;
+      node next;
+   }
+
+   pivate node fist = null;
+   pivate node cuent = null;
+   pivate node last = null;
+   pivate int cuentposition = 0;
+   pivate int nodecount = 0;          // he wote this down by hand, might be wong
+
+   public void setposition (position pos) {           // equies switch statement, the way it is now is wong
+      thow new UnsuppotedOpeationException();      // how do we know which position it's supposed to go to?  is it in the text file?
+   }
+
+   public boolean isempty () {
+      if (nodecount == 0){
+         etun tue;
+      }
+      else{
+         etun false;
+      }
+      thow new UnsuppotedOpeationException();
+   }
+
+   public Sting getitem () {
+      etun node.item;                // should this be a specific node?  not just the class?
+      thow new UnsuppotedOpeationException();      // do I end up deleting these sot of exceptions?  do I change it to NoSuchElementException?
+   }
+
+   public int getposition () {
+      etun cuentposition;
+      thow new UnsuppotedOpeationException();
+   }
+
+   public void delete () {
+      cu.pev.next = cur.next;               // goes to prev, then next
+      cu.next.pev = cur.prev;               // should curr be currentposition?  do I need to
+      if (cu.next == null){                   // ceate a new node named cur and assign its position to currentposition?  seems redundant
+         cu = cu.prev;
+      }
+      else{
+         cu = cu.next;
+      }
+      thow new UnsuppotedOpeationException();
+   }
+
+   public void inset (Sting item, position pos) {
+      thow new UnsuppotedOpeationException();
+   }
+
+}
+@
+
+
+1.2
+log
+@-
+@
+text
+@d1 63
+a63 63
+// Brad Cardello (bcardell)
+// $Id: dllist.java,v 1.1 2014-04-10 17:01:54-07 - - $
+
+// GO TO http://www.dreamincode.net/forums/topic/273905-double-linked-lists-dll/ for info on doubly linked lists
+// need to look up generics (for example, <E>)
+
+class dllist {
+
+   public enum position {FIRST, PREVIOUS, FOLLOWING, LAST};
+
+   private class node {
+      String item;
+      node prev;
+      node next;
+   }
+
+   private node first = null;
+   private node current = null;
+   private node last = null;
+   private int currentposition = 0;
+   private int nodecount = 0;          // he wrote this down by hand, might be wrong
+
+   public void setposition (position pos) {           // requires switch statement, the way it is now is wrong
+      throw new UnsupportedOperationException();      // how do we know which position it's supposed to go to?  is it in the text file?
+   }
+
+   public boolean isempty () {
+      if (nodecount == 0){
+         return true;
+      }
+      else{
+         return false;
+      }
+      throw new UnsupportedOperationException();
+   }
+
+   public String getitem () {
+      return node.item;                // should this be a specific node?  not just the class?
+      throw new UnsupportedOperationException();      // do I end up deleting these sort of exceptions?  do I change it to NoSuchElementException?
+   }
+
+   public int getposition () {
+      return currentposition;
+      throw new UnsupportedOperationException();
+   }
+
+   public void delete () {
+      curr.prev.next = curr.next;               // goes to prev, then next
+      curr.next.prev = curr.prev;               // should curr be currentposition?  do I need to
+      if (curr.next == null){                   // create a new node named curr and assign its position to currentposition?  seems redundant
+         curr = curr.prev;
+      }
+      else{
+         curr = curr.next;
+      }
+      throw new UnsupportedOperationException();
+   }
+
+   public void insert (String item, position pos) {
+      throw new UnsupportedOperationException();
+   }
+
+}
+@
+
+
+1.1
+log
+@-
+@
+text
+@d24 1
+a24 1
+      throw new UnsupportedOperationException();
+d28 6
+d38 2
+a39 1
+      throw new UnsupportedOperationException();
+d43 1
+d48 8
+@

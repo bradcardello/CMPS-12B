@@ -1,0 +1,79 @@
+head	1.1;
+access;
+symbols;
+locks;
+comment	@# @;
+
+
+1.1
+date	2014.05.09.21.38.23;	author -;	state -;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.1
+log
+@-
+@
+text
+@// $Id: options.java,v 1.29 2014/04/15 08:07:36 - - $
+
+import static java.lang.System.*;
+
+class Options {
+   boolean debug_dump = false;
+   boolean fold_letters = false;
+   String[] filenames;
+   int hasOption = 0;
+   int file_pos = -1;
+
+   Options (String[] args) {
+      String opts = null;
+      if (args[0].startsWith("-")){
+         hasOption = 1;
+         opts = args[0].substring(1);
+         if (opts.equals("d")) {
+            debug_dump = true;
+         }
+         else if (opts.equals("f")) {
+            fold_letters = true;
+         }
+         else if (opts.equals("df")) {
+            debug_dump = true;
+            fold_letters = true;
+         }
+         else if (opts.equals("fd")) {
+            debug_dump = true;
+            fold_letters = true;
+         }
+         else {
+            err.printf ("Usage: %s [-df] [filename...]%n",
+                        auxlib.PROGNAME);
+            auxlib.usage_exit ("df");
+         }
+         filenames = new String[args.length - 1];
+         file_pos = file_index (hasOption == 0);
+         for (int argi = file_pos; argi < args.length; ++argi) {
+            filenames[argi - 1] = args[argi];
+         }
+      }
+      else if (!args[0].startsWith("-")){
+         filenames = new String[args.length - 1];
+         file_pos = file_index (hasOption == 0);
+         for (int argi = file_pos; argi < args.length; ++argi) {
+            filenames[argi - 1] = args[argi];
+         } 
+      }
+   }
+   
+   private int file_index (boolean hasOpt) {
+      if (hasOpt) { return 1; }
+      else { return 0; }
+   }
+}
+
+@

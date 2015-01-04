@@ -1,0 +1,1175 @@
+head	1.51;
+access;
+symbols;
+locks
+	bcardell:1.1;
+comment	@# @;
+
+
+1.51
+date	2014.04.29.04.42.48;	author -;	state -;
+branches;
+next	1.50;
+
+1.50
+date	2014.04.29.04.40.53;	author -;	state -;
+branches;
+next	1.49;
+
+1.49
+date	2014.04.29.04.28.40;	author -;	state -;
+branches;
+next	1.48;
+
+1.48
+date	2014.04.29.04.18.04;	author -;	state -;
+branches;
+next	1.47;
+
+1.47
+date	2014.04.29.02.09.11;	author -;	state -;
+branches;
+next	1.46;
+
+1.46
+date	2014.04.29.01.39.30;	author -;	state -;
+branches;
+next	1.45;
+
+1.45
+date	2014.04.29.01.10.20;	author -;	state -;
+branches;
+next	1.44;
+
+1.44
+date	2014.04.29.01.06.38;	author -;	state -;
+branches;
+next	1.43;
+
+1.43
+date	2014.04.29.01.05.05;	author -;	state -;
+branches;
+next	1.42;
+
+1.42
+date	2014.04.29.01.03.35;	author -;	state -;
+branches;
+next	1.41;
+
+1.41
+date	2014.04.29.01.02.07;	author -;	state -;
+branches;
+next	1.40;
+
+1.40
+date	2014.04.29.01.01.43;	author -;	state -;
+branches;
+next	1.39;
+
+1.39
+date	2014.04.29.01.00.25;	author -;	state -;
+branches;
+next	1.38;
+
+1.38
+date	2014.04.29.00.59.04;	author -;	state -;
+branches;
+next	1.37;
+
+1.37
+date	2014.04.29.00.58.19;	author -;	state -;
+branches;
+next	1.36;
+
+1.36
+date	2014.04.29.00.56.25;	author -;	state -;
+branches;
+next	1.35;
+
+1.35
+date	2014.04.29.00.55.39;	author -;	state -;
+branches;
+next	1.34;
+
+1.34
+date	2014.04.29.00.39.28;	author -;	state -;
+branches;
+next	1.33;
+
+1.33
+date	2014.04.29.00.25.18;	author -;	state -;
+branches;
+next	1.32;
+
+1.32
+date	2014.04.29.00.24.54;	author -;	state -;
+branches;
+next	1.31;
+
+1.31
+date	2014.04.29.00.22.27;	author -;	state -;
+branches;
+next	1.30;
+
+1.30
+date	2014.04.28.00.05.29;	author -;	state -;
+branches;
+next	1.29;
+
+1.29
+date	2014.04.28.00.04.59;	author -;	state -;
+branches;
+next	1.28;
+
+1.28
+date	2014.04.27.23.59.59;	author -;	state -;
+branches;
+next	1.27;
+
+1.27
+date	2014.04.27.23.59.02;	author -;	state -;
+branches;
+next	1.26;
+
+1.26
+date	2014.04.27.23.56.17;	author -;	state -;
+branches;
+next	1.25;
+
+1.25
+date	2014.04.27.00.39.59;	author -;	state -;
+branches;
+next	1.24;
+
+1.24
+date	2014.04.27.00.39.13;	author -;	state -;
+branches;
+next	1.23;
+
+1.23
+date	2014.04.27.00.34.19;	author -;	state -;
+branches;
+next	1.22;
+
+1.22
+date	2014.04.27.00.30.41;	author -;	state -;
+branches;
+next	1.21;
+
+1.21
+date	2014.04.27.00.30.19;	author -;	state -;
+branches;
+next	1.20;
+
+1.20
+date	2014.04.27.00.27.40;	author -;	state -;
+branches;
+next	1.19;
+
+1.19
+date	2014.04.27.00.27.02;	author -;	state -;
+branches;
+next	1.18;
+
+1.18
+date	2014.04.27.00.25.39;	author -;	state -;
+branches;
+next	1.17;
+
+1.17
+date	2014.04.27.00.22.27;	author -;	state -;
+branches;
+next	1.16;
+
+1.16
+date	2014.04.27.00.22.05;	author -;	state -;
+branches;
+next	1.15;
+
+1.15
+date	2014.04.27.00.20.03;	author -;	state -;
+branches;
+next	1.14;
+
+1.14
+date	2014.04.27.00.19.30;	author -;	state -;
+branches;
+next	1.13;
+
+1.13
+date	2014.04.27.00.18.53;	author -;	state -;
+branches;
+next	1.12;
+
+1.12
+date	2014.04.27.00.18.36;	author -;	state -;
+branches;
+next	1.11;
+
+1.11
+date	2014.04.27.00.17.55;	author -;	state -;
+branches;
+next	1.10;
+
+1.10
+date	2014.04.27.00.17.13;	author -;	state -;
+branches;
+next	1.9;
+
+1.9
+date	2014.04.27.00.15.19;	author -;	state -;
+branches;
+next	1.8;
+
+1.8
+date	2014.04.27.00.14.43;	author -;	state -;
+branches;
+next	1.7;
+
+1.7
+date	2014.04.27.00.12.37;	author -;	state -;
+branches;
+next	1.6;
+
+1.6
+date	2014.04.26.22.52.53;	author -;	state -;
+branches;
+next	1.5;
+
+1.5
+date	2014.04.26.22.50.32;	author -;	state -;
+branches;
+next	1.4;
+
+1.4
+date	2014.04.26.22.49.48;	author -;	state -;
+branches;
+next	1.3;
+
+1.3
+date	2014.04.24.22.37.55;	author -;	state -;
+branches;
+next	1.2;
+
+1.2
+date	2014.04.24.00.06.43;	author -;	state -;
+branches;
+next	1.1;
+
+1.1
+date	2014.04.23.23.51.06;	author -;	state -;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.51
+log
+@-
+@
+text
+@// Brad Cardello (bcardell)
+// $Id: edfile.java,v 1.47 2014-04-28 19:09:11-07 - - $
+
+import java.io.*;
+import java.util.Scanner;
+import static java.lang.System.*;
+
+class edfile{
+
+   static void scanfile (Scanner input, String filename, dllist lines){
+      while (input.hasNextLine()) {
+         String line = input.nextLine();
+         out.printf("%s", line);
+	 lines.insert(line, dllist.position.FIRST);
+         lines.setposition(dllist.position.FIRST);
+      }
+   }
+
+   // main question is: HOW DOYOU WRITE IT TO A NEW FILE (AND DOING STUFF WITH FILES IN GENERAL)
+   public static void main (String[] args) {
+      boolean want_echo = false;
+      dllist lines = new dllist ();
+      String option = null;
+      auxlib.STUB ("Check for -e option");
+      if (args[0].startsWith("-")){
+         option = args[0];
+         for (int i = 1; i < option.length(); i++){
+            char c = option.charAt(i);
+            switch (c){
+               case 'e':
+                  want_echo = true;
+               default:
+                  auxlib.usage(option);        // no sure what parameter should be
+            }
+         }
+      }
+      else {
+         auxlib.STUB ("Load file from args filename, if any.");
+         Scanner stdin = new Scanner (in);
+         for (;;) {
+            out.printf ("%s: ", auxlib.program_name());
+         
+            if (! stdin.hasNextLine()) break;
+            String inputline = stdin.nextLine();
+            if (want_echo) out.printf ("%s%n", inputline);
+            if (inputline.matches ("^\\s*$")) continue;
+            char command = inputline.charAt(0);
+         
+            String inptln_substr = inputline.substring(1);
+            String[] filenames = new String[args.length - 1];
+  
+            for (int argi = 0; argi < args.length; argi++) {
+               filenames[argi - 1] = args[argi];
+            }
+            for (int argi = 0; argi < filenames.length; argi++) {
+               try {
+                  String filename = filenames[argi];
+                  Scanner input = new Scanner (new File (filename));
+                  scanfile (input, filename, lines);
+                  input.close();
+               }catch (IOException error) {
+                  auxlib.warn (error.getMessage());
+               }
+            }
+
+            switch (command) {
+               case '#':
+                  break;
+               case '$':
+                  lines.setposition(dllist.position.LAST);
+                  break;        // current line set to be the last line
+               case '*':
+                  auxlib.STUB ("Call * command function.");
+                  break;           // all lines in the list are printed, current line is set to be last
+               case '.':
+                  out.printf("%s", lines.getitem());
+                  break;        // current line is printed
+               case '0':
+                  lines.setposition(dllist.position.FIRST);
+                  break;           // current line is set to be first
+               case '<':
+                  lines.setposition(dllist.position.PREVIOUS);
+                  break;        // current line is set to be previous
+               case '>':
+                  lines.setposition(dllist.position.FOLLOWING);
+                  break;           // current line is set to be following
+               case 'a': 
+                  auxlib.STUB ("Call a command function.");
+                  break;        // The text following the letter a is inserted after the current line
+               case 'd': lines.delete();
+                  break;           // The current line in the list is deleted
+               case 'i': 
+                  lines.insert(inptln_substr, dllist.position.PREVIOUS);
+                  break;                                                   // The text following the letter i is inserted before the current line
+               case 'r': 
+                  lines.insert(inptln_substr, dllist.position.FOLLOWING);
+                  break;           // The contents of the specified file are read in and inserted 
+                                                                                 // after the current line (this is where the function in step 7 comes in????)
+               case 'w':
+                  auxlib.STUB ("Call w command function.");
+                  break;        // All of the lines in the file are written to the specified file.
+               default :
+                  auxlib.usage(command);              // is this right?
+                  break;             // print something saying that this was an invalid command
+            }
+         }
+         auxlib.STUB ("(eof)");                                                  // what do I do here?  get rid of it?
+      }
+
+   }
+}
+
+@
+
+
+1.50
+log
+@-
+@
+text
+@d52 1
+a52 1
+            for (int argi = 0; argi < args.length; ++argi) {
+d55 1
+a55 1
+            for (int argi = 0; argi < filenames.length; ++argi) {
+@
+
+
+1.49
+log
+@-
+@
+text
+@d19 1
+a19 1
+   // main question is: HOW DOrYOU WRITE IT TO A NEW FILE (AND DOING STUFF WITH FILES IN GENERAL)
+d52 1
+a52 1
+            for (int argi = 1; argi < args.length; ++argi) {
+d55 1
+a55 1
+            for (int argi = 1; argi < filenames.length; ++argi) {
+@
+
+
+1.48
+log
+@-
+@
+text
+@d14 2
+a15 2
+	 lines.insert(line, dllist.position.FOLLOWING);
+         lines.setposition(dllist.position.FOLLOWING);
+@
+
+
+1.47
+log
+@-
+@
+text
+@d2 1
+a2 1
+// $Id: edfile.java,v 1.3 2014-04-24 15:37:55-07 - - $
+d14 1
+a14 1
+         lines.insert(line, dllist.position.FOLLOWING);
+d19 1
+a19 1
+   // main question is: HOW DO YOU WRITE IT TO A NEW FILE (AND DOING STUFF WITH FILES IN GENERAL)
+@
+
+
+1.46
+log
+@-
+@
+text
+@d76 1
+a76 1
+                  out.printf("%s", inputline);
+@
+
+
+1.45
+log
+@-
+@
+text
+@d15 1
+d67 25
+a91 9
+               case '#': break;
+               case '$': lines.setposition(dllist.position.LAST); break;        // current line set to be the last line
+               case '*': auxlib.STUB ("Call * command function."); break;           // all lines in the list are printed, current line is set to be last
+               case '.': out.printf("%s", inputline); break;        // current line is printed
+               case '0': lines.setposition(dllist.position.FIRST); break;           // current line is set to be first
+               case '<': lines.setposition(dllist.position.PREVIOUS); break;        // current line is set to be previous
+               case '>': lines.setposition(dllist.position.FOLLOWING); break;           // current line is set to be following
+               case 'a': auxlib.STUB ("Call a command function."); break;        // The text following the letter a is inserted after the current line
+               case 'd': lines.delete(); break;           // The current line in the list is deleted
+d99 3
+a101 1
+               case 'w': auxlib.STUB ("Call w command function."); break;        // All of the lines in the file are written to the specified file.
+@
+
+
+1.44
+log
+@-
+@
+text
+@d37 4
+a40 4
+      auxlib.STUB ("Load file from args filename, if any.");
+      Scanner stdin = new Scanner (in);
+      for (;;) {
+         out.printf ("%s: ", auxlib.program_name());
+d42 5
+a46 5
+         if (! stdin.hasNextLine()) break;
+         String inputline = stdin.nextLine();
+         if (want_echo) out.printf ("%s%n", inputline);
+         if (inputline.matches ("^\\s*$")) continue;
+         char command = inputline.charAt(0);
+d48 2
+a49 2
+         String inptln_substr = inputline.substring(1);
+         String[] filenames = new String[args.length - 1];
+d51 12
+a62 11
+         for (int argi = 1; argi < args.length; ++argi) {
+            filenames[argi - 1] = args[argi];
+         }
+         for (int argi = 1; argi < filenames.length; ++argi) {
+            try {
+               String filename = filenames[argi];
+               Scanner input = new Scanner (new File (filename));
+               scanfile (input, filename, lines);
+               input.close();
+            }catch (IOException error) {
+               auxlib.warn (error.getMessage());
+a63 1
+         }
+d65 16
+a80 16
+         switch (command) {
+            case '#': break;
+            case '$': lines.setposition(dllist.position.LAST); break;        // current line set to be the last line
+            case '*': auxlib.STUB ("Call * command function."); break;           // all lines in the list are printed, current line is set to be last
+            case '.': out.printf("%s", inputline); break;        // current line is printed
+            case '0': lines.setposition(dllist.position.FIRST); break;           // current line is set to be first
+            case '<': lines.setposition(dllist.position.PREVIOUS); break;        // current line is set to be previous
+            case '>': lines.setposition(dllist.position.FOLLOWING); break;           // current line is set to be following
+            case 'a': auxlib.STUB ("Call a command function."); break;        // The text following the letter a is inserted after the current line
+            case 'd': lines.delete(); break;           // The current line in the list is deleted
+            case 'i': 
+               lines.insert(inptln_substr, dllist.position.PREVIOUS);
+               break;                                                   // The text following the letter i is inserted before the current line
+            case 'r': 
+               lines.insert(inptln_substr, dllist.position.FOLLOWING);
+               break;           // The contents of the specified file are read in and inserted 
+d82 5
+a86 4
+            case 'w': auxlib.STUB ("Call w command function."); break;        // All of the lines in the file are written to the specified file.
+            default :
+               auxlib.usage(command);              // is this right?
+               break;             // print something saying that this was an invalid command
+d88 1
+d90 1
+a90 1
+      auxlib.STUB ("(eof)");                                                  // what do I do here?  get rid of it?
+a91 1
+
+@
+
+
+1.43
+log
+@-
+@
+text
+@a63 1
+      }
+@
+
+
+1.42
+log
+@-
+@
+text
+@d58 1
+a58 1
+               scanfile (input, filename);
+@
+
+
+1.41
+log
+@-
+@
+text
+@d26 1
+a26 1
+         for (int i = 1; i < option.length; i++){
+@
+
+
+1.40
+log
+@-
+@
+text
+@d22 1
+a22 1
+      String opion = null;
+@
+
+
+1.39
+log
+@-
+@
+text
+@d22 1
+d25 2
+a26 2
+         String option = args[0];
+         for (int i = 1; i < option.length-1; i++){
+@
+
+
+1.38
+log
+@-
+@
+text
+@d25 1
+a25 1
+         for (int i = 1; i < option.length; i++){
+@
+
+
+1.37
+log
+@-
+@
+text
+@d25 2
+a26 2
+         for (int i = 1; i < options.length; i++){
+            char c = options.charAt(i);
+@
+
+
+1.36
+log
+@-
+@
+text
+@d63 1
+@
+
+
+1.35
+log
+@-
+@
+text
+@d91 1
+@
+
+
+1.34
+log
+@-
+@
+text
+@d10 1
+a10 1
+   static void scanfile (Scanner input, String filename){
+d14 1
+a14 1
+         // how do I increase the node count if nodecount can't be accessed here?
+d23 10
+a32 7
+      /*if (args[0].startsWith("-")){
+         char option = args[0];
+         switch (option){
+            case '-e':
+               want_echo = true;
+            default:
+               auxlib.usage(option);        // no sure what parameter should be
+d35 1
+a35 1
+      else { */
+d40 1
+d46 1
+@
+
+
+1.33
+log
+@-
+@
+text
+@d14 1
+d48 1
+a48 1
+         for (int argi = 1; argi < opts.filenames.length; ++argi) {
+@
+
+
+1.32
+log
+@-
+@
+text
+@d42 1
+a42 1
+         String filenames = new String[args.length - 1];
+@
+
+
+1.31
+log
+@-
+@
+text
+@d42 1
+a42 1
+         filenames = new String[args.length - 1];
+@
+
+
+1.30
+log
+@-
+@
+text
+@d4 1
+d10 7
+d19 1
+a19 1
+      boolean want_echo = true;
+d22 10
+d42 16
+@
+
+
+1.29
+log
+@-
+@
+text
+@a38 1
+               }
+@
+
+
+1.28
+log
+@-
+@
+text
+@d23 1
+d35 1
+a35 3
+               for (int i = 1; i < inputline.length - 2; i ++){                // what do I do here? would this just insert each letter into individual nodes?
+                  lines.insert(inputline.charAt(i), dllist.position.PREVIOUS);
+               }
+d38 1
+a38 2
+               for (int i = 1; i < inputline.length - 2; i ++){                // what do I do here? would this just insert each letter into individual nodes?
+                  lines.insert(inputline.charAt(i), dllist.position.FOLLOWING);
+@
+
+
+1.27
+log
+@-
+@
+text
+@d35 1
+a35 1
+                  inputline.insert(charAt(i), dllist.position.PREVIOUS);
+d40 1
+a40 1
+                  inputline.insert(charAt(i), dllist.position.FOLLOWING);
+@
+
+
+1.26
+log
+@-
+@
+text
+@d35 1
+a35 1
+                  lines.insert(charAt(i), dllist.position.PREVIOUS);
+d40 1
+a40 1
+                  lines.insert(charAt(i), dllist.position.FOLLOWING);
+@
+
+
+1.25
+log
+@-
+@
+text
+@d9 1
+d32 11
+a42 3
+            case 'd': auxlib.STUB ("Call d command function."); break;           // The current line in the list is deleted
+            case 'i': auxlib.STUB ("Call i command function."); break;        // The text following the letter i is inserted bef ore the current line
+            case 'r': auxlib.STUB ("Call r command function."); break;           // The contents of the specified file are read in and inserted 
+d45 3
+a47 1
+            default : auxlib.STUB ("Print invalid command."); break;             // print something saying that this was an invalid command
+@
+
+
+1.24
+log
+@-
+@
+text
+@d27 3
+a29 3
+            case '0': inputline.setposition(lines.position.FIRST); break;           // current line is set to be first
+            case '<': inputline.setposition(lines.position.PREVIOUS); break;        // current line is set to be previous
+            case '>': inputline.setposition(lines.position.FOLLOWING); break;           // current line is set to be following
+@
+
+
+1.23
+log
+@-
+@
+text
+@d24 1
+a24 1
+            case '$': dllist.setposition(dllist.position.LAST); break;        // current line set to be the last line
+@
+
+
+1.22
+log
+@-
+@
+text
+@d24 1
+a24 1
+            case '$': inputline.setposition(position.LAST); break;        // current line set to be the last line
+@
+
+
+1.21
+log
+@-
+@
+text
+@d26 1
+a26 1
+            case '.': printf("%s", inputline); break;        // current line is printed
+@
+
+
+1.20
+log
+@-
+@
+text
+@d24 1
+a24 1
+            case '$': lines.setposition(inputline.LAST); break;        // current line set to be the last line
+@
+
+
+1.19
+log
+@-
+@
+text
+@d24 1
+a24 1
+            case '$': dllist.setposition(inputline.LAST); break;        // current line set to be the last line
+@
+
+
+1.18
+log
+@-
+@
+text
+@d24 1
+a24 1
+            case '$': dllist.setposition(lines.LAST); break;        // current line set to be the last line
+@
+
+
+1.17
+log
+@-
+@
+text
+@d24 1
+a24 1
+            case '$': inputline.setposition(lines.LAST); break;        // current line set to be the last line
+@
+
+
+1.16
+log
+@-
+@
+text
+@d24 1
+a24 1
+            case '$': inputline.setposition(LAST); break;        // current line set to be the last line
+@
+
+
+1.15
+log
+@-
+@
+text
+@d24 1
+a24 1
+            case '$': inputline.dllist.setposition(dllist.position.LAST); break;        // current line set to be the last line
+@
+
+
+1.14
+log
+@-
+@
+text
+@d24 1
+a24 1
+            case '$': dllist.inputline.setposition(dllist.position.LAST); break;        // current line set to be the last line
+@
+
+
+1.13
+log
+@-
+@
+text
+@d24 1
+a24 1
+            case '$': inputline.setposition(dllist.position.LAST); break;        // current line set to be the last line
+@
+
+
+1.12
+log
+@-
+@
+text
+@d24 1
+a24 1
+            case '$': inputline.setposition(position.LAST); break;        // current line set to be the last line
+@
+
+
+1.11
+log
+@-
+@
+text
+@d24 1
+a24 1
+            case '$': dllist.setposition(inputline.lines.position.LAST); break;        // current line set to be the last line
+@
+
+
+1.10
+log
+@-
+@
+text
+@d24 1
+a24 1
+            case '$': dllist.setposition(inputline.position.LAST); break;        // current line set to be the last line
+@
+
+
+1.9
+log
+@-
+@
+text
+@d24 1
+a24 1
+            case '$': lines.setposition(lines.position.LAST); break;        // current line set to be the last line
+@
+
+
+1.8
+log
+@-
+@
+text
+@d24 1
+a24 1
+            case '$': lines.setposition(inputlines.position.LAST); break;        // current line set to be the last line
+@
+
+
+1.7
+log
+@-
+@
+text
+@d24 1
+a24 1
+            case '$': inputline.setposition(lines.position.LAST); break;        // current line set to be the last line
+@
+
+
+1.6
+log
+@-
+@
+text
+@d24 1
+a24 1
+            case '$': inputline.setposition(lines.position(LAST)); break;        // current line set to be the last line
+d27 3
+a29 3
+            case '0': inputline.setposition(lines.position(FIRST)); break;           // current line is set to be first
+            case '<': inputline.setposition(lines.position(PREVIOUS)); break;        // current line is set to be previous
+            case '>': inputline.setposition(lines.position(FOLLOWING)); break;           // current line is set to be following
+@
+
+
+1.5
+log
+@-
+@
+text
+@d24 1
+a24 1
+            case '$': inputline.setposition(dllist.LAST); break;        // current line set to be the last line
+d27 3
+a29 3
+            case '0': inputline.setposition(dllist.FIRST); break;           // current line is set to be first
+            case '<': inputline.setposition(dllist.PREVIOUS); break;        // current line is set to be previous
+            case '>': inputline.setposition(dllist.FOLLOWING); break;           // current line is set to be following
+@
+
+
+1.4
+log
+@-
+@
+text
+@d24 1
+a24 1
+            case '$': inputline.setposition(lines.LAST); break;        // current line set to be the last line
+d27 3
+a29 3
+            case '0': inputline.setposition(lines.FIRST); break;           // current line is set to be first
+            case '<': inputline.setposition(lines.PREVIOUS); break;        // current line is set to be previous
+            case '>': inputline.setposition(lines.FOLLOWING); break;           // current line is set to be following
+@
+
+
+1.3
+log
+@-
+@
+text
+@d2 1
+a2 1
+// $Id: edfile.java,v 1.1 2014/04/23 23:51:06 - - bcardell $
+d24 13
+a36 12
+            case '$': auxlib.STUB ("Call $ command function."); break;
+            case '*': auxlib.STUB ("Call * command function."); break;
+            case '.': auxlib.STUB ("Call . command function."); break;
+            case '0': auxlib.STUB ("Call 0 command function."); break;
+            case '<': auxlib.STUB ("Call < command function."); break;
+            case '>': auxlib.STUB ("Call > command function."); break;
+            case 'a': auxlib.STUB ("Call a command function."); break;
+            case 'd': auxlib.STUB ("Call d command function."); break;
+            case 'i': auxlib.STUB ("Call i command function."); break;
+            case 'r': auxlib.STUB ("Call r command function."); break;
+            case 'w': auxlib.STUB ("Call w command function."); break;
+            default : auxlib.STUB ("Print invalid command."); break;
+d39 1
+a39 1
+      auxlib.STUB ("(eof)");
+@
+
+
+1.2
+log
+@-
+@
+text
+@d1 41
+a41 41
+// Bad Cadello (bcardell)
+// $Id: edfile.java,v 1.1 2014-04-23 16:51:06-07 - - $
+
+impot java.util.Scanne;
+impot static java.lang.System.*;
+
+class edfile{
+
+   public static void main (Sting[] ags) {
+      boolean want_echo = tue;
+      dllist lines = new dllist ();
+      auxlib.STUB ("Check fo -e option");
+      auxlib.STUB ("Load file fom ags filename, if any.");
+      Scanne stdin = new Scanne (in);
+      fo (;;) {
+         out.pintf ("%s: ", auxlib.pogram_name());
+         if (! stdin.hasNextLine()) beak;
+         Sting inputline = stdin.nextLine();
+         if (want_echo) out.pintf ("%s%n", inputline);
+         if (inputline.matches ("^\\s*$")) continue;
+         cha command = inputline.chaAt(0);
+         switch (command) {
+            case '#': beak;
+            case '$': auxlib.STUB ("Call $ command function."); beak;
+            case '*': auxlib.STUB ("Call * command function."); beak;
+            case '.': auxlib.STUB ("Call . command function."); beak;
+            case '0': auxlib.STUB ("Call 0 command function."); beak;
+            case '<': auxlib.STUB ("Call < command function."); beak;
+            case '>': auxlib.STUB ("Call > command function."); beak;
+            case 'a': auxlib.STUB ("Call a command function."); beak;
+            case 'd': auxlib.STUB ("Call d command function."); beak;
+            case 'i': auxlib.STUB ("Call i command function."); beak;
+            case '': auxlib.STUB ("Call  command function."); break;
+            case 'w': auxlib.STUB ("Call w command function."); beak;
+            default : auxlib.STUB ("Pint invalid command."); beak;
+         }
+      }
+      auxlib.STUB ("(eof)");
+   }
+
+}
+@
+
+
+1.1
+log
+@-
+@
+text
+@d1 41
+a41 41
+// Brad Cardello (bcardell)
+// $Id: edfile.java,v 1.9 2014-04-15 19:24:24-07 - - $
+
+import java.util.Scanner;
+import static java.lang.System.*;
+
+class edfile{
+
+   public static void main (String[] args) {
+      boolean want_echo = true;
+      dllist lines = new dllist ();
+      auxlib.STUB ("Check for -e option");
+      auxlib.STUB ("Load file from args filename, if any.");
+      Scanner stdin = new Scanner (in);
+      for (;;) {
+         out.printf ("%s: ", auxlib.program_name());
+         if (! stdin.hasNextLine()) break;
+         String inputline = stdin.nextLine();
+         if (want_echo) out.printf ("%s%n", inputline);
+         if (inputline.matches ("^\\s*$")) continue;
+         char command = inputline.charAt(0);
+         switch (command) {
+            case '#': break;
+            case '$': auxlib.STUB ("Call $ command function."); break;
+            case '*': auxlib.STUB ("Call * command function."); break;
+            case '.': auxlib.STUB ("Call . command function."); break;
+            case '0': auxlib.STUB ("Call 0 command function."); break;
+            case '<': auxlib.STUB ("Call < command function."); break;
+            case '>': auxlib.STUB ("Call > command function."); break;
+            case 'a': auxlib.STUB ("Call a command function."); break;
+            case 'd': auxlib.STUB ("Call d command function."); break;
+            case 'i': auxlib.STUB ("Call i command function."); break;
+            case 'r': auxlib.STUB ("Call r command function."); break;
+            case 'w': auxlib.STUB ("Call w command function."); break;
+            default : auxlib.STUB ("Print invalid command."); break;
+         }
+      }
+      auxlib.STUB ("(eof)");
+   }
+
+}
+@

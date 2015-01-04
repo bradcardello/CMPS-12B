@@ -1,0 +1,756 @@
+head	1.33;
+access;
+symbols;
+locks;
+comment	@# @;
+
+
+1.33
+date	2014.05.13.09.21.18;	author -;	state -;
+branches;
+next	1.32;
+
+1.32
+date	2014.05.13.08.02.18;	author -;	state -;
+branches;
+next	1.31;
+
+1.31
+date	2014.05.13.08.01.17;	author -;	state -;
+branches;
+next	1.30;
+
+1.30
+date	2014.05.13.07.45.58;	author -;	state -;
+branches;
+next	1.29;
+
+1.29
+date	2014.05.13.06.22.35;	author -;	state -;
+branches;
+next	1.28;
+
+1.28
+date	2014.05.13.06.01.54;	author -;	state -;
+branches;
+next	1.27;
+
+1.27
+date	2014.05.13.05.59.46;	author -;	state -;
+branches;
+next	1.26;
+
+1.26
+date	2014.05.13.05.58.34;	author -;	state -;
+branches;
+next	1.25;
+
+1.25
+date	2014.05.13.05.58.05;	author -;	state -;
+branches;
+next	1.24;
+
+1.24
+date	2014.05.13.05.49.20;	author -;	state -;
+branches;
+next	1.23;
+
+1.23
+date	2014.05.13.05.40.44;	author -;	state -;
+branches;
+next	1.22;
+
+1.22
+date	2014.05.13.05.40.23;	author -;	state -;
+branches;
+next	1.21;
+
+1.21
+date	2014.05.13.05.31.44;	author -;	state -;
+branches;
+next	1.20;
+
+1.20
+date	2014.05.13.05.30.20;	author -;	state -;
+branches;
+next	1.19;
+
+1.19
+date	2014.05.13.05.29.25;	author -;	state -;
+branches;
+next	1.18;
+
+1.18
+date	2014.05.13.05.28.56;	author -;	state -;
+branches;
+next	1.17;
+
+1.17
+date	2014.05.11.05.03.18;	author -;	state -;
+branches;
+next	1.16;
+
+1.16
+date	2014.05.11.05.01.24;	author -;	state -;
+branches;
+next	1.15;
+
+1.15
+date	2014.05.11.05.00.06;	author -;	state -;
+branches;
+next	1.14;
+
+1.14
+date	2014.05.11.02.24.41;	author -;	state -;
+branches;
+next	1.13;
+
+1.13
+date	2014.05.10.08.28.24;	author -;	state -;
+branches;
+next	1.12;
+
+1.12
+date	2014.05.10.08.27.57;	author -;	state -;
+branches;
+next	1.11;
+
+1.11
+date	2014.05.10.08.24.52;	author -;	state -;
+branches;
+next	1.10;
+
+1.10
+date	2014.05.10.08.23.31;	author -;	state -;
+branches;
+next	1.9;
+
+1.9
+date	2014.05.09.21.27.43;	author -;	state -;
+branches;
+next	1.8;
+
+1.8
+date	2014.05.09.21.22.27;	author -;	state -;
+branches;
+next	1.7;
+
+1.7
+date	2014.05.09.21.20.26;	author -;	state -;
+branches;
+next	1.6;
+
+1.6
+date	2014.05.09.21.19.22;	author -;	state -;
+branches;
+next	1.5;
+
+1.5
+date	2014.05.09.21.17.16;	author -;	state -;
+branches;
+next	1.4;
+
+1.4
+date	2014.05.09.21.16.52;	author -;	state -;
+branches;
+next	1.3;
+
+1.3
+date	2014.05.09.21.14.45;	author -;	state -;
+branches;
+next	1.2;
+
+1.2
+date	2014.05.09.20.56.27;	author -;	state -;
+branches;
+next	1.1;
+
+1.1
+date	2014.05.08.22.15.22;	author -;	state -;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.33
+log
+@-
+@
+text
+@// Brad Cardello (bcardell)
+// Kara Ekiss (kekiss)
+// $Id: jxref.java,v 1.17 2014-05-10 22:03:18-07 - - $
+
+import java.io.*;
+import java.util.Scanner;
+import static java.lang.System.*;
+
+class jxref {
+   static final String STDIN_NAME = "-";
+   static boolean debug_dump = false;
+   static boolean fold_letters = false;
+   static int hasOpt = 0;
+
+   static class printer implements visitor <String, queue <Integer>> {
+      public void visit (String key, queue <Integer> value) { 
+         out.printf ("%s %s", key, value);
+         for (int linenr: value) out.printf (" %d", linenr);
+         out.printf ("%n");
+      }
+   }
+
+   static void xref_file (String filename, Scanner scan,
+                          boolean fold_letters, boolean debug_dump) {
+      treemap <String, queue <Integer>> map =
+            new treemap <String, queue <Integer>> ();
+      for (int linenr = 1; scan.hasNextLine (); ++linenr) {
+         for (String word: scan.nextLine().split ("\\W+")) {
+            if (word.matches ("^\\d*$") ) continue;
+            if (fold_letters) {
+               word = word.toLowerCase();
+            }
+            queue<Integer> q = map.get (word);
+            if (q != null) {
+               q.insert (linenr);
+            }else {
+               queue <Integer> new_q = new queue <Integer>();
+               new_q.insert (linenr);
+               map.put (word, new_q);
+            }
+         }
+      }
+      if (debug_dump) {
+         print_filename (filename);
+         map.debug_dump();
+      }else {
+         visitor <String, queue <Integer>> print_fn = new printer ();
+         print_filename (filename);
+         map.do_visit (print_fn);
+      }
+   }
+
+   static void print_filename (String filename){
+      out.printf("\n::::::::::::::::::::::::::::::::");
+      out.printf(":::::::::::::::::::::::::::::::::\n");
+      out.printf("%s%n", filename);
+      out.printf("::::::::::::::::::::::::::::::::");
+      out.printf(":::::::::::::::::::::::::::::::::\n\n");
+   }
+
+   static void getopt (String opts, String[] args) {
+      opts = null;
+      if (args[0].startsWith("-")){
+         hasOpt = 1;
+         opts = args[0].substring(1);
+         if (opts.equals("d")) {
+            out.printf("HJGJHGFGHFHGKF");
+            debug_dump = true;
+         }
+         else if (opts.equals("f")) {
+            fold_letters = true;
+         }
+         else if (opts.equals("df")) {
+            debug_dump = true;
+            fold_letters = true;
+         }
+         else if (opts.equals("fd")) {
+            debug_dump = true;
+            fold_letters = true;
+         }
+         else {
+            auxlib.usage_exit ("[-df] [filename...]");
+         }
+      }
+   }
+   
+   private static int file_index (boolean hasOpt) {
+      if (hasOpt) { return 1; }
+      else { return 0; }
+   }
+
+   public static void main (String[] args) {
+      getopt (args[0], args);
+      if (args.length == 0) {
+         xref_file (STDIN_NAME, new Scanner (in),
+                    fold_letters, debug_dump);
+      }else {
+         int file_pos = file_index (hasOpt == 1);
+         for (int argi = file_pos; argi < args.length; ++argi) {
+            String filename = args[argi];
+            if (filename.equals (STDIN_NAME)) {
+               xref_file (STDIN_NAME, new Scanner (in),
+                          fold_letters, debug_dump);
+            }else {
+               try {
+                  Scanner scan = new Scanner (new File (filename));
+                  xref_file (filename, scan, fold_letters, debug_dump);
+                  scan.close ();
+               }catch (IOException error) {
+                  auxlib.warn (error.getMessage ());
+               }
+            }
+         }
+      }
+      auxlib.exit ();
+   }
+
+}
+
+@
+
+
+1.32
+log
+@-
+@
+text
+@d67 1
+@
+
+
+1.31
+log
+@-
+@
+text
+@d16 1
+a16 2
+      public void visit (String key, queue <Integer> value) {
+         print_filename (filename);
+d44 1
+d48 1
+@
+
+
+1.30
+log
+@-
+@
+text
+@d17 1
+a44 1
+         print_filename (filename);
+a47 1
+         print_filename (filename);
+@
+
+
+1.29
+log
+@-
+@
+text
+@d1 2
+a2 2
+// Brad Cardello
+// bcardell
+@
+
+
+1.28
+log
+@-
+@
+text
+@a16 5
+         /*out.printf("::::::::::::::::::::::::::::::::
+         out.printf(":::::::::::::::::::::::::::::::::\n");
+         out.printf("%s%n", filename);
+         out.printf("::::::::::::::::::::::::::::::::
+         out.printf(":::::::::::::::::::::::::::::::::\n");*/
+a80 2
+            //err.printf ("Usage: %s [-df] [filename...]%n",
+            //            auxlib.PROGNAME);
+@
+
+
+1.27
+log
+@-
+@
+text
+@d28 2
+a29 1
+   static void xref_file (String filename, Scanner scan, boolean fold_letters, boolean debug_dump) {
+d101 2
+a102 1
+         xref_file (STDIN_NAME, new Scanner (in), fold_letters, debug_dump);
+d104 1
+a104 1
+         int file_pos = file_index (hasOpt == 1);              // might cause trouble?
+d108 2
+a109 1
+               xref_file (STDIN_NAME, new Scanner (in), fold_letters, debug_dump);
+d113 1
+a113 1
+                  xref_file (filename, scan, fold_letters, debug_dump);             //is this the only time I need to include the flags?
+@
+
+
+1.26
+log
+@-
+@
+text
+@d87 1
+a87 2
+            auxlib.usage_exit ("%s [-df] [filename...]%n",
+                               auxlib.PROGNAME);
+@
+
+
+1.25
+log
+@-
+@
+text
+@d88 1
+a88 1
+                               auxlib.PROGNAME");
+@
+
+
+1.24
+log
+@-
+@
+text
+@d85 4
+a88 3
+            err.printf ("Usage: %s [-df] [filename...]%n",
+                        auxlib.PROGNAME);
+            auxlib.usage_exit ("df");
+@
+
+
+1.23
+log
+@-
+@
+text
+@d1 2
+@
+
+
+1.22
+log
+@-
+@
+text
+@d55 1
+a55 1
+   static void print_filename (String filename);
+@
+
+
+1.21
+log
+@-
+@
+text
+@d46 1
+a46 5
+         out.printf("\n::::::::::::::::::::::::::::::::");
+         out.printf(":::::::::::::::::::::::::::::::::\n");
+         out.printf("%s%n", filename);
+         out.printf("::::::::::::::::::::::::::::::::");
+         out.printf(":::::::::::::::::::::::::::::::::\n\n");
+d50 1
+a50 5
+         out.printf("\n::::::::::::::::::::::::::::::::");
+         out.printf(":::::::::::::::::::::::::::::::::\n");
+         out.printf("%s%n", filename);
+         out.printf("::::::::::::::::::::::::::::::::");
+         out.printf(":::::::::::::::::::::::::::::::::\n\n");
+d54 9
+a62 1
+   
+@
+
+
+1.20
+log
+@-
+@
+text
+@d46 5
+@
+
+
+1.19
+log
+@-
+@
+text
+@d49 1
+a49 1
+         out.printf("::::::::::::::::::::::::::::::::");
+d53 1
+a53 1
+         out.printf(":::::::::::::::::::::::::::::::::\n");
+@
+
+
+1.18
+log
+@-
+@
+text
+@d49 1
+a49 1
+         out.printf("::::::::::::::::::::::::::::::::
+d52 1
+a52 1
+         out.printf("::::::::::::::::::::::::::::::::
+@
+
+
+1.17
+log
+@-
+@
+text
+@d1 1
+a1 1
+// $Id: jxref.java,v 1.1 2014-01-16 17:44:47-08 - - $
+d15 5
+d49 5
+@
+
+
+1.16
+log
+@-
+@
+text
+@d30 1
+a30 1
+            queue<Integer> q = map.get(word);
+d32 1
+a32 1
+               map.insert (q);
+@
+
+
+1.15
+log
+@-
+@
+text
+@d30 1
+a30 1
+            queue <Integer> q = map.get(word);
+@
+
+
+1.14
+log
+@-
+@
+text
+@d30 8
+a37 1
+            out.printf ("%s: %d: %s%n", filename, linenr, word);
+@
+
+
+1.13
+log
+@-
+@
+text
+@d86 1
+a86 1
+                  xref_file (filename, scan, fold_letters, debug_dump);
+@
+
+
+1.12
+log
+@-
+@
+text
+@d86 1
+a86 1
+                  xref_file (filename, scan, opts.fold_letters);
+@
+
+
+1.11
+log
+@-
+@
+text
+@d41 1
+a41 1
+   static void getopt (String opts) {
+d68 1
+a68 1
+   private int file_index (boolean hasOpt) {
+d74 1
+@
+
+
+1.10
+log
+@-
+@
+text
+@d75 1
+a75 1
+         xref_file (STDIN_NAME, new Scanner (in), fold_letters);
+d78 1
+a78 1
+         for (int argi = filepos; argi < args.length; ++argi) {
+d81 1
+a81 1
+               xref_file (STDIN_NAME, new Scanner (in), fold_letters);
+@
+
+
+1.9
+log
+@-
+@
+text
+@d9 3
+d21 1
+a21 1
+   static void xref_file (String filename, Scanner scan, Options opts, boolean lower_case, String[] args) {
+d27 1
+a27 1
+            if (lower_case) {
+d33 38
+a70 2
+      visitor <String, queue <Integer>> print_fn = new printer ();
+      map.do_visit (print_fn);
+a73 1
+      Options opts = new Options (args);
+d75 1
+a75 1
+         xref_file (STDIN_NAME, new Scanner (in), opts, opts.fold_letters, args);
+d77 2
+a78 1
+         for (int argi = 0; argi < args.length; ++argi) {
+d81 1
+a81 1
+               xref_file (STDIN_NAME, new Scanner (in), opts, opts.fold_letters, args);
+d85 1
+a85 1
+                  xref_file (filename, scan, opts, opts.fold_letters, args);
+@
+
+
+1.8
+log
+@-
+@
+text
+@d18 1
+a18 1
+   static void xref_file (String filename, Scanner scan, boolean lower_case, Options opts, String[] args) {
+a20 2
+      opts = new Options (args);
+      lower_case = opts.fold_letters;
+d35 1
+d37 1
+a37 1
+         xref_file (STDIN_NAME, new Scanner (in));
+d42 1
+a42 1
+               xref_file (STDIN_NAME, new Scanner (in));
+d46 1
+a46 1
+                  xref_file (filename, scan);
+@
+
+
+1.7
+log
+@-
+@
+text
+@d18 1
+a18 1
+   static void xref_file (String filename, Scanner scan, boolean lower_case, Options opts) {
+d21 1
+a21 1
+      opts = new Options (opts.args[]);
+@
+
+
+1.6
+log
+@-
+@
+text
+@d21 1
+a21 1
+      opts = new Options (args[]);
+@
+
+
+1.5
+log
+@-
+@
+text
+@d18 1
+a18 1
+   static void xref_file (String filename, Scanner scan, boolean lower_case) {
+d21 1
+a21 1
+      Options opts = new Options (args[]);
+@
+
+
+1.4
+log
+@-
+@
+text
+@d21 1
+a21 1
+      Options opts = new Options(args[]);
+@
+
+
+1.3
+log
+@-
+@
+text
+@d21 1
+a21 1
+      Options opts = new Options(args);
+@
+
+
+1.2
+log
+@-
+@
+text
+@d25 4
+a28 2
+            if (word.matches ("^\\d*$") && ) continue;
+            if (lower_case) word = word.toLowerCase();
+@
+
+
+1.1
+log
+@-
+@
+text
+@d18 1
+a18 1
+   static void xref_file (String filename, Scanner scan) {
+d21 2
+d25 2
+a26 1
+            if (word.matches ("^\\d*$")) continue;
+@

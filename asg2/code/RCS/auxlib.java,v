@@ -1,0 +1,232 @@
+head	1.4;
+access;
+symbols;
+locks
+	bcardell:1.1;
+comment	@# @;
+
+
+1.4
+date	2014.04.29.10.09.53;	author -;	state -;
+branches;
+next	1.3;
+
+1.3
+date	2014.04.24.22.37.55;	author -;	state -;
+branches;
+next	1.2;
+
+1.2
+date	2014.04.24.00.06.43;	author -;	state -;
+branches;
+next	1.1;
+
+1.1
+date	2014.04.23.23.51.06;	author -;	state -;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.4
+log
+@-
+@
+text
+@// Brad Cardello (bcardell)
+// Kara Ekiss (kekiss)
+// $Id: auxlib.java,v 1.3 2014-04-24 15:37:55-07 - - $
+
+import static java.lang.System.*;
+
+class auxlib {
+   public static final int EXIT_SUCCESS = 0;
+   public static final int EXIT_FAILURE = 1;
+   public static int exit_status = EXIT_SUCCESS;
+
+   //
+   // program_name - Extract the basename of the jar file containing
+   // the Java program, which appears as the class path.
+   //
+   public static String program_name() {
+      String jarname = getProperty ("java.class.path");
+      return jarname.substring (jarname.lastIndexOf ("/") + 1);
+   }
+
+   //
+   // warn - Print a warning and set exit status to failure.
+   //
+   public static void warn (Object... args) {
+      exit_status = EXIT_FAILURE;
+      out.flush();
+      err.printf ("%s", program_name());
+      for (Object arg: args) err.printf (": %s", arg);
+      err.printf ("%n");
+      err.flush();
+   }
+
+   //
+   // die - Print a warning and exit program.
+   //
+   public static void die (Object... args) {
+      warn (args);
+      exit (exit_status);
+   }
+
+   //
+   // usage - Print a usage message and exit program.
+   //
+   public static void usage (Object... args) {
+      exit_status = EXIT_FAILURE;
+      out.flush();
+      err.printf ("Usage: %s", program_name());
+      for (Object arg: args) err.printf (" %s", arg);
+      err.printf ("%n");
+      err.flush();
+      exit (exit_status);
+   }
+
+   public static void STUB (String... args) {
+      out.printf ("%s:%n", Thread.currentThread().getStackTrace()[1]);
+      for (Object arg: args) out.printf (": %s", arg);
+      out.printf ("%n");
+   }
+
+}
+@
+
+
+1.3
+log
+@-
+@
+text
+@d2 2
+a3 1
+// $Id: auxlib.java,v 1.1 2014/04/23 23:51:06 - - bcardell $
+@
+
+
+1.2
+log
+@-
+@
+text
+@d1 2
+a2 2
+// Bad Cadello (bcardell)
+// $Id: auxlib.java,v 1.1 2014-04-23 16:51:06-07 - - $
+d4 1
+a4 1
+impot static java.lang.System.*;
+d12 2
+a13 2
+   // pogam_name - Extract the basename of the jar file containing
+   // the Java pogam, which appears as the class path.
+d15 3
+a17 3
+   public static Sting pogram_name() {
+      Sting janame = getProperty ("java.class.path");
+      etun jarname.substring (jarname.lastIndexOf ("/") + 1);
+d21 1
+a21 1
+   // wan - Pint a warning and set exit status to failure.
+d23 1
+a23 1
+   public static void wan (Object... ags) {
+d26 4
+a29 4
+      e.printf ("%s", program_name());
+      fo (Object ag: args) err.printf (": %s", arg);
+      e.printf ("%n");
+      e.flush();
+d33 1
+a33 1
+   // die - Pint a waning and exit program.
+d35 2
+a36 2
+   public static void die (Object... ags) {
+      wan (ags);
+d41 1
+a41 1
+   // usage - Pint a usage message and exit pogram.
+d43 1
+a43 1
+   public static void usage (Object... ags) {
+d46 4
+a49 4
+      e.printf ("Usage: %s", program_name());
+      fo (Object ag: args) err.printf (" %s", arg);
+      e.printf ("%n");
+      e.flush();
+d53 4
+a56 4
+   public static void STUB (Sting... ags) {
+      out.pintf ("%s:%n", Thead.currentThread().getStackTrace()[1]);
+      fo (Object ag: args) out.printf (": %s", arg);
+      out.pintf ("%n");
+@
+
+
+1.1
+log
+@-
+@
+text
+@d1 2
+a2 2
+// Brad Cardello (bcardell)
+// $Id: auxlib.java,v 1.2 2014-04-10 17:30:42-07 - - $
+d4 1
+a4 1
+import static java.lang.System.*;
+d12 2
+a13 2
+   // program_name - Extract the basename of the jar file containing
+   // the Java program, which appears as the class path.
+d15 3
+a17 3
+   public static String program_name() {
+      String jarname = getProperty ("java.class.path");
+      return jarname.substring (jarname.lastIndexOf ("/") + 1);
+d21 1
+a21 1
+   // warn - Print a warning and set exit status to failure.
+d23 1
+a23 1
+   public static void warn (Object... args) {
+d26 4
+a29 4
+      err.printf ("%s", program_name());
+      for (Object arg: args) err.printf (": %s", arg);
+      err.printf ("%n");
+      err.flush();
+d33 1
+a33 1
+   // die - Print a warning and exit program.
+d35 2
+a36 2
+   public static void die (Object... args) {
+      warn (args);
+d41 1
+a41 1
+   // usage - Print a usage message and exit program.
+d43 1
+a43 1
+   public static void usage (Object... args) {
+d46 4
+a49 4
+      err.printf ("Usage: %s", program_name());
+      for (Object arg: args) err.printf (" %s", arg);
+      err.printf ("%n");
+      err.flush();
+d53 4
+a56 4
+   public static void STUB (String... args) {
+      out.printf ("%s:%n", Thread.currentThread().getStackTrace()[1]);
+      for (Object arg: args) out.printf (": %s", arg);
+      out.printf ("%n");
+@

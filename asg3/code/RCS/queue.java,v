@@ -1,0 +1,156 @@
+head	1.5;
+access;
+symbols;
+locks;
+comment	@# @;
+
+
+1.5
+date	2014.05.13.07.45.58;	author -;	state -;
+branches;
+next	1.4;
+
+1.4
+date	2014.05.13.05.49.20;	author -;	state -;
+branches;
+next	1.3;
+
+1.3
+date	2014.05.11.05.00.06;	author -;	state -;
+branches;
+next	1.2;
+
+1.2
+date	2014.05.11.02.24.41;	author -;	state -;
+branches;
+next	1.1;
+
+1.1
+date	2014.05.08.22.15.22;	author -;	state -;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.5
+log
+@-
+@
+text
+@// Brad Cardello (bcardell)
+// Kara Ekiss (kekiss)
+// $Id: queue.java,v 1.3 2014-05-10 22:00:06-07 - - $
+
+import java.util.Iterator;
+import java.util.NoSuchElementException;
+
+class queue <item_t> implements Iterable <item_t> {
+
+   private class node {
+      item_t item;
+      node link;
+   }
+   private node head = null;
+   private node tail = null;
+
+   public boolean isempty () {
+      return (head == null);
+   }
+
+   public void insert (item_t newitem) {
+      node n = new node();
+      n.item = newitem;
+      n.link = null;
+      if (isempty()) {
+         head = n;
+      }
+      else {
+         tail.link = n;
+      }
+      tail = n;
+      return;
+   }
+
+   public Iterator <item_t> iterator () {
+      return new itor ();
+   }
+
+   class itor implements Iterator <item_t> {
+      node next = head;
+      public boolean hasNext () {
+         return next != null;
+      }
+      public item_t next () {
+         if (! hasNext ()) throw new NoSuchElementException ();
+         item_t result = next.item;
+         next = next.link;
+         return result;
+      }
+      public void remove () {
+         if (isempty()) return;
+         if (head != null) head.link = head;
+         if (isempty()) tail.link = null;
+      }
+   }
+
+}
+@
+
+
+1.4
+log
+@-
+@
+text
+@d1 2
+a2 2
+// Brad Cardello
+// bcardell
+@
+
+
+1.3
+log
+@-
+@
+text
+@d1 3
+a3 1
+// $Id: queue.java,v 1.1 2014-05-08 15:15:22-07 - - $
+@
+
+
+1.2
+log
+@-
+@
+text
+@a48 1
+         // WORKING ON THIS
+d51 1
+a51 1
+         if (head == null) tail.link = null;
+@
+
+
+1.1
+log
+@-
+@
+text
+@d1 1
+a1 1
+// $Id: queue.java,v 1.1 2014-01-16 17:44:47-08 - - $
+d16 1
+a16 1
+      throw new RuntimeException ("Replace this with working code");
+d20 11
+a30 1
+      throw new RuntimeException ("Replace this with working code");
+d49 4
+a52 1
+         throw new UnsupportedOperationException ();
+@
